@@ -79,6 +79,39 @@ function DateTimeField_Native({
 }: {
   value: Date; mode: 'date' | 'time'; onChange: (d: Date) => void; onClose: () => void;
 }) {
+  const t = useTheme();
+
+  // @react-native-community/datetimepicker has no web implementation (it renders
+  // null there) — fall back to a native HTML date/time input on web.
+  if (Platform.OS === 'web') {
+    const webValue = mode === 'date'
+      ? toISO(value)
+      : `${String(value.getHours()).padStart(2, '0')}:${String(value.getMinutes()).padStart(2, '0')}`;
+    return React.createElement('input', {
+      type: mode,
+      value: webValue,
+      autoFocus: true,
+      style: {
+        minHeight: 44, marginTop: 8, width: '100%', fontSize: 14, fontFamily: t.font.body,
+        padding: '8px 14px', borderRadius: t.radius.pill, border: `1px solid ${t.neutral[300]}`,
+        boxSizing: 'border-box', color: t.text, background: t.bg,
+      },
+      onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
+        const v = e.target.value;
+        if (!v) return;
+        if (mode === 'date') {
+          onChange(new Date(v + 'T00:00:00'));
+        } else {
+          const [h, m] = v.split(':').map(Number);
+          const d = new Date(value);
+          d.setHours(h, m, 0, 0);
+          onChange(d);
+        }
+      },
+      onBlur: onClose,
+    });
+  }
+
   if (Platform.OS === 'android') {
     return (
       <DateTimePicker
