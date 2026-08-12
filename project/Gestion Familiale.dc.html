@@ -1,0 +1,1666 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<template id="__bundler_thumbnail">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#fdf6ea"/><circle cx="100" cy="100" r="60" fill="none" stroke="#e8836b" stroke-width="6"/><text x="100" y="118" font-size="70" font-family="sans-serif" fill="#8a9e78" text-anchor="middle">G</text></svg>
+</template>
+<x-dc>
+<helmet>
+<link rel="icon" href="uploads/ChatGPT Image 12 août 2026, 17_41_13.png">
+<link rel="apple-touch-icon" href="uploads/ChatGPT Image 12 août 2026, 17_41_13.png">
+<link rel="stylesheet" href="_ds/organic-b4fa7872-b9a2-4890-a104-cf2810020e25/styles.css">
+<script src="_ds/organic-b4fa7872-b9a2-4890-a104-cf2810020e25/_ds_bundle.js"></script>
+<script src="./image-slot.js"></script>
+<style>
+:root {
+  --color-bg: #f9efe9;
+  --color-surface: #f0e0d8;
+  --color-text: #232c47;
+  --color-accent: #cf7669;
+  --color-accent-2: #3f8fa0;
+  --color-divider: color-mix(in srgb, #232c47 16%, transparent);
+
+  --color-neutral-100: #f6f0ec;
+  --color-neutral-200: #ece2db;
+  --color-neutral-300: #d8cac0;
+  --color-neutral-400: #b8a89b;
+  --color-neutral-500: #98867a;
+  --color-neutral-600: #786a60;
+  --color-neutral-700: #5a4f47;
+  --color-neutral-800: #3d3530;
+  --color-neutral-900: #262019;
+
+  --color-accent-100: #fdeeea;
+  --color-accent-200: #f8d6cd;
+  --color-accent-300: #f0b3a8;
+  --color-accent-400: #dd8f7f;
+  --color-accent-500: #cf7669;
+  --color-accent-600: #b35d51;
+  --color-accent-700: #8f4a41;
+  --color-accent-800: #6c3831;
+  --color-accent-900: #472521;
+
+  --color-accent-2-100: #eef6f5;
+  --color-accent-2-200: #d9ebe7;
+  --color-accent-2-300: #c7ddd3;
+  --color-accent-2-400: #7db9bd;
+  --color-accent-2-500: #4d95a8;
+  --color-accent-2-600: #3c7a8c;
+  --color-accent-2-700: #2d5f6e;
+  --color-accent-2-800: #1f4550;
+  --color-accent-2-900: #142e35;
+}
+body{margin:0;background:var(--color-bg);font-family:var(--font-body);}
+a{color:var(--color-accent-700);text-decoration:none}
+a:hover{color:var(--color-accent-900)}
+button{font-family:var(--font-body);cursor:pointer;border:none;background:none;padding:0}
+input{font-family:var(--font-body)}
+::-webkit-scrollbar{display:none}
+</style>
+</helmet>
+<div style="display:flex;justify-content:center;align-items:flex-start;padding:36px 20px;background:var(--color-bg);min-height:100vh;box-sizing:border-box">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" width="{{ 393 }}" height="{{ 852 }}" hint-size="393px,852px">
+<div style="height:100%;display:flex;flex-direction:column;background:var(--color-bg);position:relative;overflow:hidden;font-family:var(--font-body)">
+  <div style="height:56px;flex-shrink:0"></div>
+
+  <div style="flex:1;min-height:0;overflow-y:auto;box-sizing:border-box">
+
+    <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+    <div>
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;padding:18px 22px 6px">
+        <div>
+          <div style="font-family:var(--font-body);font-size:12.5px;font-weight:700;color:var(--color-accent-700);letter-spacing:.06em;text-transform:uppercase">{{ todayDateLabel }}</div>
+          <div style="font-family:var(--font-heading);font-size:30px;color:var(--color-text);margin-top:2px">Bonjour {{ currentUserName }}</div>
+        </div>
+        <button onClick="{{ openSettings }}" style="position:relative;width:38px;height:38px;border-radius:50%;background:var(--color-neutral-100);color:var(--color-text);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          <sc-if value="{{ hasPendingBadge }}">
+            <span style="position:absolute;top:-4px;right:-4px;min-width:18px;height:18px;padding:0 4px;border-radius:999px;background:var(--color-accent-500);color:#fff;font-size:10.5px;font-weight:700;display:flex;align-items:center;justify-content:center;border:2px solid var(--color-bg)">{{ pendingTasksCount }}</span>
+          </sc-if>
+        </button>
+      </div>
+
+      <div style="display:flex;gap:12px;padding:14px 22px 18px">
+        <div class="card elev-sm" style="flex:1;padding:14px;border-radius:var(--radius-lg);background:var(--color-accent-100)">
+          <div style="font-family:var(--font-heading);font-size:24px;color:var(--color-accent-700)">{{ pendingTasksCount }}</div>
+          <div style="font-size:12.5px;color:var(--color-accent-700);margin-top:2px">tâches à faire</div>
+        </div>
+        <div class="card elev-sm" style="flex:1;padding:14px;border-radius:var(--radius-lg);background:var(--color-accent-2-100)">
+          <div style="font-family:var(--font-heading);font-size:24px;color:var(--color-accent-2-700)">{{ mealsPlannedCount }}/7</div>
+          <div style="font-size:12.5px;color:var(--color-accent-2-700);margin-top:2px">repas planifiés</div>
+        </div>
+      </div>
+
+      <div class="card elev-sm" style="margin:0 22px 16px;padding:16px 18px;border-radius:var(--radius-lg)" onTouchStart="{{ handleHomeSwipeStart }}" onTouchEnd="{{ handleHomeSwipeEnd }}">
+        <div class="card-kicker">{{ homeDayLabel }}</div>
+        <sc-if value="{{ hasTodayEvents }}">
+          <sc-for list="{{ todayEvents }}" as="ev" hint-placeholder-count="2">
+            <div style="display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--color-neutral-200)">
+              <div style="width:8px;height:8px;border-radius:50%;background:{{ ev.color }};flex-shrink:0"></div>
+              <div style="flex:1;min-width:0">
+                <div style="font-size:15px;color:var(--color-text);font-weight:600">{{ ev.title }}</div>
+                <div style="font-size:12.5px;color:var(--color-neutral-600)">{{ ev.time }}{{ ev.spanSuffix }}</div>
+              </div>
+            </div>
+          </sc-for>
+        </sc-if>
+        <sc-if value="{{ hasTodayEventsEmpty }}">
+          <div style="padding:10px 0 2px;color:var(--color-neutral-600);font-size:14px">Rien de prévu ce jour-là.</div>
+        </sc-if>
+        <sc-if value="{{ hasTodayTasks }}">
+          <sc-for list="{{ todayTasksForCard }}" as="task" hint-placeholder-count="2">
+            <div style="display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--color-neutral-200)">
+              <button onClick="{{ task.toggle }}" style="{{ task.checkboxStyle }}">
+                <sc-if value="{{ task.completed }}"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></sc-if>
+              </button>
+              <div style="flex:1;min-width:0">
+                <div style="{{ task.titleStyle }}">{{ task.title }}</div>
+              </div>
+              <span class="tag {{ task.tagClass }}" style="flex-shrink:0;font-size:11px">{{ task.categoryLabel }}</span>
+            </div>
+          </sc-for>
+        </sc-if>
+      </div>
+
+      <div class="card elev-sm" style="margin:0 22px 20px;padding:14px;border-radius:var(--radius-lg);display:flex;gap:12px;align-items:center">
+        <div style="width:60px;height:60px;border-radius:14px;overflow:hidden;flex-shrink:0">
+          <image-slot id="{{ tonightSlotId }}" shape="rounded" radius="14" placeholder="Repas"></image-slot>
+        </div>
+        <div style="flex:1;min-width:0">
+          <div class="card-kicker">Ce soir</div>
+          <div style="font-size:15.5px;font-weight:600;color:var(--color-text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ tonightMealName }}</div>
+        </div>
+      </div>
+
+      <div style="padding:0 22px 10px;font-family:var(--font-heading);font-size:18px;color:var(--color-text)">À faire bientôt</div>
+      <div class="card" style="margin:0 22px 24px;border-radius:var(--radius-lg);overflow:hidden">
+        <sc-for list="{{ upcomingTasks }}" as="task" hint-placeholder-count="3">
+          <div style="display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--color-neutral-200)">
+            <button onClick="{{ task.toggle }}" style="{{ task.checkboxStyle }}">
+              <sc-if value="{{ task.completed }}"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></sc-if>
+            </button>
+            <button onClick="{{ task.cycleAssignee }}" style="{{ task.avatarStyle }}" title="Changer la personne assignée">{{ task.avatarInitial }}</button>
+            <div style="flex:1;min-width:0">
+              <div style="{{ task.titleStyle }}">{{ task.title }}</div>
+              <div style="font-size:12px;color:var(--color-neutral-600);margin-top:1px">{{ task.metaLabel }}</div>
+            </div>
+            <span class="tag {{ task.tagClass }}" style="flex-shrink:0;font-size:11px">{{ task.categoryLabel }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    </sc-if>
+
+    <sc-if value="{{ isCalendar }}">
+    <div>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 22px 4px">
+        <div style="font-family:var(--font-heading);font-size:28px;color:var(--color-text)">Calendrier</div>
+        <div class="seg" style="flex-shrink:0">
+          <button class="seg-opt" style="{{ weekModeStyle }}" onClick="{{ selectWeekView }}">Semaine</button>
+          <button class="seg-opt" style="{{ monthModeStyle }}" onClick="{{ selectMonthView }}">Mois</button>
+        </div>
+      </div>
+      <div style="text-align:center;padding:10px 22px 16px;font-size:14px;font-weight:600;color:var(--color-text)">{{ periodLabel }}</div>
+
+      <sc-if value="{{ isWeekView }}">
+      <div style="display:flex;gap:7px;padding:0 18px 18px;overflow-x:auto" onTouchStart="{{ handleCalSwipeStart }}" onTouchEnd="{{ handleCalSwipeEnd }}">
+        <sc-for list="{{ weekDaysCal }}" as="day" hint-placeholder-count="7">
+          <button onClick="{{ day.select }}" style="{{ day.chipStyle }}">
+            <div style="font-size:10.5px;letter-spacing:.03em">{{ day.weekdayShort }}</div>
+            <div style="font-size:17px;font-weight:700;margin-top:2px">{{ day.dateNum }}</div>
+            <sc-if value="{{ day.hasDot }}">
+              <div style="display:flex;gap:2px;justify-content:center;margin-top:4px">
+                <sc-for list="{{ day.dots }}" as="dot" hint-placeholder-count="1">
+                  <div style="width:5px;height:5px;border-radius:50%;background:{{ dot }}"></div>
+                </sc-for>
+              </div>
+            </sc-if>
+          </button>
+        </sc-for>
+      </div>
+      </sc-if>
+
+      <sc-if value="{{ isMonthView }}">
+      <div style="padding:0 18px 18px" onTouchStart="{{ handleCalSwipeStart }}" onTouchEnd="{{ handleCalSwipeEnd }}">
+        <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-bottom:4px">
+          <sc-for list="{{ monthWeekdayLabels }}" as="wl" hint-placeholder-count="7">
+            <div style="text-align:center;font-size:10.5px;color:var(--color-neutral-600);letter-spacing:.03em">{{ wl.label }}</div>
+          </sc-for>
+        </div>
+        <sc-for list="{{ monthWeeks }}" as="week" hint-placeholder-count="6">
+          <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-bottom:4px">
+            <sc-for list="{{ week.days }}" as="day" hint-placeholder-count="7">
+              <button onClick="{{ day.select }}" style="{{ day.cellStyle }}">
+                <span>{{ day.dateNum }}</span>
+                <sc-if value="{{ day.hasDot }}">
+                  <div style="display:flex;gap:2px;justify-content:center">
+                    <sc-for list="{{ day.dots }}" as="dot" hint-placeholder-count="1">
+                      <div style="width:4px;height:4px;border-radius:50%;background:{{ dot }}"></div>
+                    </sc-for>
+                  </div>
+                </sc-if>
+              </button>
+            </sc-for>
+          </div>
+        </sc-for>
+      </div>
+      </sc-if>
+
+      <div style="padding:0 22px 10px;font-family:var(--font-heading);font-size:18px;color:var(--color-text)">{{ selectedDayLabel }}</div>
+      <div class="card" style="margin:0 22px 20px;border-radius:var(--radius-lg);overflow:hidden">
+        <sc-if value="{{ hasSelectedDayEvents }}">
+          <sc-for list="{{ selectedDayEvents }}" as="ev" hint-placeholder-count="2">
+            <div onClick="{{ ev.openEdit }}" style="display:flex;align-items:center;gap:10px;padding:13px 16px;border-bottom:1px solid var(--color-neutral-200);cursor:pointer">
+              <div style="width:8px;height:8px;border-radius:50%;background:{{ ev.color }};flex-shrink:0"></div>
+              <div style="flex:1;min-width:0">
+                <div style="font-size:15px;color:var(--color-text);font-weight:600">{{ ev.title }}</div>
+                <div style="font-size:12.5px;color:var(--color-neutral-600)">{{ ev.time }}{{ ev.spanSuffix }}{{ ev.reminderSuffix }}</div>
+              </div>
+              <span class="tag {{ ev.tagClass }}" style="flex-shrink:0;font-size:11px">{{ ev.personLabel }}</span>
+            </div>
+          </sc-for>
+        </sc-if>
+        <sc-if value="{{ hasSelectedDayEventsEmpty }}">
+          <div style="padding:18px 16px;color:var(--color-neutral-600);font-size:14px">Aucun évènement ce jour.</div>
+        </sc-if>
+      </div>
+      <div style="padding:0 22px 28px"><button class="btn btn-secondary btn-block" onClick="{{ openAddEvent }}">+ Ajouter un rendez-vous</button></div>
+    </div>
+    </sc-if>
+
+    <sc-if value="{{ isTasks }}">
+    <div>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 22px 4px">
+        <div style="font-family:var(--font-heading);font-size:28px;color:var(--color-text)">Tâches</div>
+        <button onClick="{{ openAddTask }}" style="width:36px;height:36px;border-radius:50%;background:var(--color-accent-500);color:#fff;font-size:20px;flex-shrink:0;display:flex;align-items:center;justify-content:center">+</button>
+      </div>
+      <div style="padding:2px 22px 14px;font-size:13px;color:var(--color-neutral-700)">Connecté en tant que {{ currentUserName }}</div>
+      <div style="display:flex;gap:8px;padding:0 22px 14px">
+        <sc-for list="{{ taskFilterOptions }}" as="opt" hint-placeholder-count="3">
+          <button onClick="{{ opt.select }}" style="{{ opt.style }}">{{ opt.label }}</button>
+        </sc-for>
+      </div>
+      <sc-for list="{{ categoriesList }}" as="cat" hint-placeholder-count="4">
+        <div style="padding:18px 22px 8px;font-family:var(--font-heading);font-size:16px;color:var(--color-accent-700)">{{ cat.label }}</div>
+        <div class="card" style="margin:0 22px;border-radius:var(--radius-lg);overflow:hidden">
+          <sc-for list="{{ cat.tasks }}" as="task" hint-placeholder-count="2">
+            <div style="display:flex;align-items:center;gap:10px;padding:13px 16px;border-bottom:1px solid var(--color-neutral-200)">
+              <button onClick="{{ task.toggle }}" style="{{ task.checkboxStyle }}">
+                <sc-if value="{{ task.completed }}"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></sc-if>
+              </button>
+              <button onClick="{{ task.cycleAssignee }}" style="{{ task.avatarStyle }}" title="Changer la personne assignée">{{ task.avatarInitial }}</button>
+              <div onClick="{{ task.openEdit }}" style="flex:1;min-width:0;cursor:pointer">
+                <div style="{{ task.titleStyle }}">{{ task.title }}</div>
+                <div style="font-size:12px;color:var(--color-neutral-600);margin-top:1px">{{ task.metaLabel }}</div>
+              </div>
+              <sc-if value="{{ task.hasReceipt }}">
+                <button onClick="{{ task.viewReceipt }}" style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--color-accent-100);display:flex;align-items:center;justify-content:center">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-600)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                </button>
+              </sc-if>
+            </div>
+          </sc-for>
+        </div>
+      </sc-for>
+      <div style="height:16px"></div>
+    </div>
+    </sc-if>
+
+    <sc-if value="{{ isMeals }}">
+    <div>
+      <div style="padding:18px 22px 4px;font-family:var(--font-heading);font-size:28px;color:var(--color-text)">Repas de la semaine</div>
+      <div style="padding:2px 22px 12px;font-size:13px;color:var(--color-neutral-700)">Planifiez, ou laissez l'IA vous proposer des idées.</div>
+      <div style="text-align:center;padding:0 22px 16px;font-size:14px;font-weight:600;color:var(--color-text)">{{ mealWeekLabel }}</div>
+      <div style="display:flex;flex-direction:column;gap:10px;padding:0 22px 22px" onTouchStart="{{ handleMealSwipeStart }}" onTouchEnd="{{ handleMealSwipeEnd }}">
+        <sc-for list="{{ mealDays }}" as="md" hint-placeholder-count="7">
+          <div class="card" style="{{ md.cardStyle }}" draggable="{{ md.draggableFlag }}" onDragStart="{{ md.onDragStart }}" onDragOver="{{ md.onDragOver }}" onDrop="{{ md.onDrop }}">
+            <div style="width:38px;flex-shrink:0;text-align:center">
+              <div style="font-size:10.5px;color:var(--color-neutral-600);text-transform:uppercase">{{ md.weekdayShort }}</div>
+              <div style="font-size:15px;font-weight:700;color:var(--color-text)">{{ md.dateNum }}</div>
+            </div>
+            <sc-if value="{{ md.hasRecipe }}">
+              <div onClick="{{ md.openRecipe }}" style="width:52px;height:52px;border-radius:12px;overflow:hidden;flex-shrink:0;cursor:pointer">
+                <image-slot id="{{ md.recipeSlotId }}" shape="rounded" radius="12" placeholder="Photo"></image-slot>
+              </div>
+              <div style="flex:1;min-width:0;cursor:pointer" onClick="{{ md.openRecipe }}">
+                <div style="font-size:14.5px;font-weight:600;color:var(--color-text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ md.recipeName }}</div>
+                <div style="font-size:12px;color:var(--color-neutral-600)">{{ md.recipeTime }}</div>
+              </div>
+              <button onClick="{{ md.clear }}" style="width:26px;height:26px;border-radius:50%;background:var(--color-neutral-200);color:var(--color-neutral-700);font-size:14px;flex-shrink:0;display:flex;align-items:center;justify-content:center">×</button>
+            </sc-if>
+            <sc-if value="{{ md.hasNoRecipe }}">
+              <div style="flex:1;display:flex;gap:8px">
+                <button class="btn btn-ghost" onClick="{{ md.openPicker }}" style="flex:1;font-size:12.5px;padding:8px 4px">Choisir</button>
+                <button class="btn btn-secondary" onClick="{{ md.suggest }}" style="flex:1;font-size:12.5px;padding:8px 4px">IA suggère</button>
+              </div>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+      <div style="padding:0 22px 10px;font-family:var(--font-heading);font-size:18px;color:var(--color-text)">Nos recettes favorites</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 22px 24px">
+        <sc-for list="{{ recipes }}" as="r" hint-placeholder-count="6">
+          <div class="card elev-sm" style="border-radius:var(--radius-lg);overflow:hidden;cursor:pointer" onClick="{{ r.open }}">
+            <div style="width:100%;aspect-ratio:4/3">
+              <image-slot id="{{ r.slotId }}" shape="rect" placeholder="{{ r.name }}"></image-slot>
+            </div>
+            <div style="padding:10px 12px">
+              <div style="font-size:13.5px;font-weight:600;color:var(--color-text)">{{ r.name }}</div>
+              <div style="font-size:11.5px;color:var(--color-neutral-600);margin-top:2px">{{ r.time }} · {{ r.tag }}</div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    </sc-if>
+
+    <sc-if value="{{ isGrocery }}">
+    <div>
+      <div style="padding:18px 22px 4px;font-family:var(--font-heading);font-size:28px;color:var(--color-text)">Liste d'épicerie</div>
+      <div style="display:flex;gap:8px;padding:14px 22px 14px">
+        <input class="input" style="flex:1" placeholder="Ajouter un article…" value="{{ groceryInputValue }}" onChange="{{ handleGroceryInputChange }}" onKeyDown="{{ handleGroceryInputKeyDown }}"></input>
+        <button class="btn btn-primary" onClick="{{ addGroceryItem }}" style="padding:0 16px">Ajouter</button>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:0 22px 8px">
+        <div style="font-size:12.5px;color:var(--color-neutral-700);font-weight:700;text-transform:uppercase;letter-spacing:.04em">{{ groceryCountLabel }}</div>
+        <sc-if value="{{ hasCheckedGroceryItems }}">
+          <button onClick="{{ clearCheckedGroceryItems }}" style="font-size:12.5px;font-weight:600;color:var(--color-accent-700)">Effacer les articles cochés</button>
+        </sc-if>
+      </div>
+      <div class="card" style="margin:0 22px 24px;border-radius:var(--radius-lg);overflow:hidden">
+        <sc-if value="{{ hasGroceryItems }}">
+          <sc-for list="{{ groceryList }}" as="item" hint-placeholder-count="4">
+            <div style="display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--color-neutral-200)">
+              <button onClick="{{ item.toggle }}" style="{{ item.checkboxStyle }}">
+                <sc-if value="{{ item.checked }}"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></sc-if>
+              </button>
+              <div style="flex:1;min-width:0">
+                <div style="{{ item.textStyle }}">{{ item.name }}</div>
+              </div>
+              <sc-if value="{{ item.fromRecipe }}"><span class="tag tag-accent-2" style="flex-shrink:0;font-size:10.5px">Recette</span></sc-if>
+              <button onClick="{{ item.remove }}" style="width:26px;height:26px;border-radius:50%;background:var(--color-neutral-200);color:var(--color-neutral-700);font-size:14px;flex-shrink:0;display:flex;align-items:center;justify-content:center">×</button>
+            </div>
+          </sc-for>
+        </sc-if>
+        <sc-if value="{{ hasGroceryItemsEmpty }}">
+          <div style="padding:22px 16px;text-align:center;color:var(--color-neutral-600);font-size:14px">Votre liste est vide.</div>
+        </sc-if>
+      </div>
+    </div>
+    </sc-if>
+
+  </div>
+
+  <div style="flex-shrink:0;display:flex;justify-content:space-around;align-items:center;padding:8px 6px 26px;background:var(--color-bg);border-top:1px solid var(--color-accent-2-100);z-index:30">
+    <button onClick="{{ selectTabHome }}" style="display:flex;flex-direction:column;align-items:center;gap:3px;padding:4px 8px">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{{ tabHomeColor }}" strokeWidth="2.75" strokeLinecap="round" strokeLinejoin="round"><path d="M3 10.5 12 3l9 7.5"></path><path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"></path></svg>
+      <span style="font-size:10.5px;color:{{ tabHomeColor }};font-weight:600">Accueil</span>
+    </button>
+    <button onClick="{{ selectTabCalendar }}" style="display:flex;flex-direction:column;align-items:center;gap:3px;padding:4px 8px">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{{ tabCalendarColor }}" strokeWidth="2.75" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="5" width="18" height="16" rx="3"></rect><path d="M16 3v4M8 3v4M3 10h18"></path></svg>
+      <span style="font-size:10.5px;color:{{ tabCalendarColor }};font-weight:600">Calendrier</span>
+    </button>
+    <button onClick="{{ selectTabTasks }}" style="display:flex;flex-direction:column;align-items:center;gap:3px;padding:4px 8px">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{{ tabTasksColor }}" strokeWidth="2.75" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"></rect><path d="M8 12l3 3 5-6"></path></svg>
+      <span style="font-size:10.5px;color:{{ tabTasksColor }};font-weight:600">Tâches</span>
+    </button>
+    <button onClick="{{ selectTabMeals }}" style="display:flex;flex-direction:column;align-items:center;gap:3px;padding:4px 8px">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{{ tabMealsColor }}" strokeWidth="2.75" strokeLinecap="round" strokeLinejoin="round"><path d="M7 2v6a2 2 0 0 0 4 0V2M9 8v13"></path><path d="M17 2c-1.2 1.4-1.8 2.8-1.8 4.5S15.8 9.6 17 11v10"></path></svg>
+      <span style="font-size:10.5px;color:{{ tabMealsColor }};font-weight:600">Repas</span>
+    </button>
+    <button onClick="{{ selectTabGrocery }}" style="display:flex;flex-direction:column;align-items:center;gap:3px;padding:4px 8px">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{{ tabGroceryColor }}" strokeWidth="2.75" strokeLinecap="round" strokeLinejoin="round"><path d="M4 10h16l-1.4 9.2a2 2 0 0 1-2 1.8H7.4a2 2 0 0 1-2-1.8L4 10Z"></path><path d="M8 10 12 3l4 7"></path></svg>
+      <span style="font-size:10.5px;color:{{ tabGroceryColor }};font-weight:600">Épicerie</span>
+    </button>
+  </div>
+
+  <sc-if value="{{ pickerOpen }}">
+    <div style="position:absolute;inset:0;background:rgba(32,30,29,0.4);z-index:90;display:flex;align-items:flex-end" onClick="{{ closeOverlays }}">
+      <div style="width:100%;max-height:72%;overflow-y:auto;background:var(--color-bg);border-radius:24px 24px 0 0;box-shadow:var(--shadow-lg);padding:18px 20px 28px" onClick="{{ stopPropagation }}">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+          <div style="font-family:var(--font-heading);font-size:19px;color:var(--color-text)">Choisir une recette</div>
+          <button onClick="{{ closeOverlays }}" style="width:30px;height:30px;border-radius:50%;background:var(--color-neutral-200);color:var(--color-neutral-700);font-size:16px">×</button>
+        </div>
+        <sc-for list="{{ recipes }}" as="r" hint-placeholder-count="6">
+          <div onClick="{{ r.assignToPicker }}" style="display:flex;align-items:center;gap:12px;padding:10px 4px;border-bottom:1px solid var(--color-neutral-200);cursor:pointer">
+            <div style="width:48px;height:48px;border-radius:10px;overflow:hidden;flex-shrink:0">
+              <image-slot id="{{ r.slotId }}" shape="rounded" radius="10" placeholder="{{ r.name }}"></image-slot>
+            </div>
+            <div style="flex:1;min-width:0">
+              <div style="font-size:14.5px;font-weight:600;color:var(--color-text)">{{ r.name }}</div>
+              <div style="font-size:12px;color:var(--color-neutral-600)">{{ r.time }} · {{ r.tag }}</div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ aiOpen }}">
+    <div style="position:absolute;inset:0;background:rgba(32,30,29,0.4);z-index:90;display:flex;align-items:flex-end" onClick="{{ closeOverlays }}">
+      <div style="width:100%;background:var(--color-bg);border-radius:24px 24px 0 0;box-shadow:var(--shadow-lg);padding:18px 20px 28px" onClick="{{ stopPropagation }}">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+          <div style="font-family:var(--font-heading);font-size:19px;color:var(--color-text)">Suggestions de l'IA</div>
+          <button onClick="{{ closeOverlays }}" style="width:30px;height:30px;border-radius:50%;background:var(--color-neutral-200);color:var(--color-neutral-700);font-size:16px">×</button>
+        </div>
+        <div style="font-size:13px;color:var(--color-neutral-700);margin-bottom:12px">Basé sur vos recettes favorites, pour {{ aiDayLabel }}</div>
+        <div style="display:flex;gap:8px;margin-bottom:14px">
+          <input class="input" style="flex:1" placeholder="Ex. quelque chose de rapide, végé…" value="{{ aiQuery }}" onChange="{{ handleAiQueryChange }}"></input>
+          <button class="btn btn-secondary" style="padding:0 14px">Suggérer</button>
+        </div>
+        <sc-for list="{{ aiSuggestions }}" as="r" hint-placeholder-count="3">
+          <div onClick="{{ r.assignToAi }}" style="display:flex;align-items:center;gap:12px;padding:10px 4px;border-bottom:1px solid var(--color-neutral-200);cursor:pointer">
+            <div style="width:48px;height:48px;border-radius:10px;overflow:hidden;flex-shrink:0">
+              <image-slot id="{{ r.slotId }}" shape="rounded" radius="10" placeholder="{{ r.name }}"></image-slot>
+            </div>
+            <div style="flex:1;min-width:0">
+              <div style="font-size:14.5px;font-weight:600;color:var(--color-text)">{{ r.name }}</div>
+              <div style="font-size:12px;color:var(--color-neutral-600)">{{ r.time }} · {{ r.tag }}</div>
+            </div>
+            <span class="tag tag-accent-2" style="font-size:10.5px;flex-shrink:0">Choisir</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ settingsOpen }}">
+    <div style="position:absolute;inset:0;background:rgba(32,30,29,0.4);z-index:90;display:flex;align-items:flex-end" onClick="{{ closeOverlays }}">
+      <div style="width:100%;max-height:80%;overflow-y:auto;background:var(--color-bg);border-radius:24px 24px 0 0;box-shadow:var(--shadow-lg);padding:18px 20px 28px;box-sizing:border-box" onClick="{{ stopPropagation }}">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+          <div style="font-family:var(--font-heading);font-size:19px;color:var(--color-text)">Paramètres</div>
+          <button onClick="{{ closeOverlays }}" style="width:30px;height:30px;border-radius:50%;background:var(--color-neutral-200);color:var(--color-neutral-700);font-size:16px">×</button>
+        </div>
+        <div class="card" style="border-radius:var(--radius-lg);overflow:hidden">
+          <button onClick="{{ openAccount }}" style="width:100%;text-align:left;display:flex;align-items:center;gap:10px;padding:13px 16px;border-bottom:1px solid var(--color-neutral-200)">Mon compte</button>
+          <button onClick="{{ openMembers }}" style="width:100%;text-align:left;display:flex;align-items:center;gap:10px;padding:13px 16px;border-bottom:1px solid var(--color-neutral-200)">Membres de la famille</button>
+          <button onClick="{{ openNotifications }}" style="width:100%;text-align:left;display:flex;align-items:center;gap:10px;padding:13px 16px;border-bottom:1px solid var(--color-neutral-200)">Notifications</button>
+          <button onClick="{{ openPrefs }}" style="width:100%;text-align:left;display:flex;align-items:center;gap:10px;padding:13px 16px;border-bottom:1px solid var(--color-neutral-200)">Préférences de l'application</button>
+          <button onClick="{{ openImport }}" style="width:100%;text-align:left;display:flex;align-items:center;gap:10px;padding:13px 16px">Importer</button>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ importOpen }}">
+    <div style="position:absolute;inset:0;background:rgba(32,30,29,0.4);z-index:95;display:flex;align-items:flex-end" onClick="{{ closeImport }}">
+      <div style="width:100%;max-height:80%;overflow-y:auto;background:var(--color-bg);border-radius:24px 24px 0 0;box-shadow:var(--shadow-lg);padding:18px 20px 28px;box-sizing:border-box" onClick="{{ stopPropagation }}">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+          <div style="font-family:var(--font-heading);font-size:19px;color:var(--color-text)">Importer</div>
+          <button onClick="{{ closeImport }}" style="width:30px;height:30px;border-radius:50%;background:var(--color-neutral-200);color:var(--color-neutral-700);font-size:16px">×</button>
+        </div>
+        <div class="card" style="border-radius:var(--radius-lg);overflow:hidden">
+          <label style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 16px;border-bottom:1px solid var(--color-neutral-200);cursor:pointer">
+            <span style="font-size:14px;color:var(--color-text)">Calendrier</span>
+            <input type="file" accept=".ics" onChange="{{ handleIcsImportCalendar }}" style="display:none"></input>
+            <span style="font-size:12.5px;font-weight:600;color:var(--color-accent-700)">Choisir un fichier</span>
+          </label>
+          <label style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 16px;cursor:pointer">
+            <span style="font-size:14px;color:var(--color-text)">Calendrier de poubelle</span>
+            <input type="file" accept=".ics" onChange="{{ handleIcsImportTrash }}" style="display:none"></input>
+            <span style="font-size:12.5px;font-weight:600;color:var(--color-accent-700)">Choisir un fichier</span>
+          </label>
+        </div>
+        <sc-if value="{{ icsImportMessage }}">
+          <div style="padding:12px 4px 0;font-size:12.5px;color:var(--color-neutral-700)">{{ icsImportMessage }}</div>
+        </sc-if>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ accountOpen }}">
+    <div style="position:absolute;inset:0;background:rgba(32,30,29,0.4);z-index:95;display:flex;align-items:flex-end" onClick="{{ closeAccount }}">
+      <div style="width:100%;max-height:80%;overflow-y:auto;background:var(--color-bg);border-radius:24px 24px 0 0;box-shadow:var(--shadow-lg);padding:18px 20px 28px;box-sizing:border-box" onClick="{{ stopPropagation }}">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+          <div style="font-family:var(--font-heading);font-size:19px;color:var(--color-text)">Mon compte</div>
+          <button onClick="{{ closeAccount }}" style="width:30px;height:30px;border-radius:50%;background:var(--color-neutral-200);color:var(--color-neutral-700);font-size:16px">×</button>
+        </div>
+        <div class="field" style="margin-bottom:14px">
+          <label style="font-size:12.5px;color:var(--color-neutral-700);font-weight:600">Nom</label>
+          <input class="input" value="{{ accountName }}" onChange="{{ handleAccountNameChange }}"></input>
+        </div>
+        <div class="field" style="margin-bottom:20px">
+          <label style="font-size:12.5px;color:var(--color-neutral-700);font-weight:600">Courriel</label>
+          <input class="input" type="email" value="{{ accountEmail }}" onChange="{{ handleAccountEmailChange }}"></input>
+        </div>
+        <button class="btn btn-primary btn-block" onClick="{{ saveAccount }}" style="margin-bottom:20px">Enregistrer</button>
+        <div style="font-size:12.5px;color:var(--color-neutral-700);font-weight:600;margin-bottom:8px">Mot de passe</div>
+        <button class="btn btn-secondary btn-block" style="margin-bottom:20px">Changer le mot de passe</button>
+        <button class="btn btn-ghost btn-block" style="color:var(--color-accent-700)">Se déconnecter</button>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ receiptViewerOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position:absolute;inset:0;background:rgba(0,0,0,0.85);z-index:98;display:flex;flex-direction:column" onClick="{{ closeReceiptViewer }}">
+      <div style="display:flex;justify-content:flex-end;padding:16px">
+        <button onClick="{{ closeReceiptViewer }}" style="width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,0.15);color:#fff;font-size:18px">×</button>
+      </div>
+      <div style="flex:1;padding:0 16px 16px">
+        <div style="{{ receiptViewerBgStyle }}"></div>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ financeProofPromptOpen }}">
+    <div style="position:absolute;inset:0;background:rgba(32,30,29,0.4);z-index:97;display:flex;align-items:flex-end" onClick="{{ skipFinanceProof }}">
+      <div style="width:100%;background:var(--color-bg);border-radius:24px 24px 0 0;box-shadow:var(--shadow-lg);padding:18px 20px 28px" onClick="{{ stopPropagation }}">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+          <div style="font-family:var(--font-heading);font-size:19px;color:var(--color-text)">Ajouter une preuve ?</div>
+          <button onClick="{{ skipFinanceProof }}" style="width:30px;height:30px;border-radius:50%;background:var(--color-neutral-200);color:var(--color-neutral-700);font-size:16px">×</button>
+        </div>
+        <div style="font-size:13px;color:var(--color-neutral-700);margin-bottom:18px">Voulez-vous prendre une photo de la preuve de paiement pour cette tâche ?</div>
+        <label style="display:block;margin-bottom:10px">
+          <input type="file" accept="image/*" capture="environment" onChange="{{ handleFinanceProofFile }}" style="display:none"></input>
+          <span class="btn btn-primary btn-block">Prendre une photo</span>
+        </label>
+        <button class="btn btn-ghost btn-block" onClick="{{ skipFinanceProof }}">Plus tard</button>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ prefsOpen }}">
+    <div style="position:absolute;inset:0;background:rgba(32,30,29,0.4);z-index:95;display:flex;align-items:flex-end" onClick="{{ closePrefs }}">
+      <div style="width:100%;max-height:80%;overflow-y:auto;background:var(--color-bg);border-radius:24px 24px 0 0;box-shadow:var(--shadow-lg);padding:18px 20px 28px;box-sizing:border-box" onClick="{{ stopPropagation }}">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+          <div style="font-family:var(--font-heading);font-size:19px;color:var(--color-text)">Préférences de l'application</div>
+          <button onClick="{{ closePrefs }}" style="width:30px;height:30px;border-radius:50%;background:var(--color-neutral-200);color:var(--color-neutral-700);font-size:16px">×</button>
+        </div>
+        <div style="font-size:12.5px;color:var(--color-neutral-700);font-weight:600;margin-bottom:8px">Langue</div>
+        <div style="display:flex;gap:8px;margin-bottom:18px">
+          <sc-for list="{{ prefLanguageOptions }}" as="opt" hint-placeholder-count="2">
+            <button onClick="{{ opt.select }}" style="{{ opt.style }}">{{ opt.label }}</button>
+          </sc-for>
+        </div>
+        <div style="font-size:12.5px;color:var(--color-neutral-700);font-weight:600;margin-bottom:8px">Format d'heure</div>
+        <div style="display:flex;gap:8px;margin-bottom:18px">
+          <sc-for list="{{ prefTimeFormatOptions }}" as="opt" hint-placeholder-count="2">
+            <button onClick="{{ opt.select }}" style="{{ opt.style }}">{{ opt.label }}</button>
+          </sc-for>
+        </div>
+        <div style="font-size:12.5px;color:var(--color-neutral-700);font-weight:600;margin-bottom:8px">Premier jour de la semaine</div>
+        <div style="display:flex;gap:8px;margin-bottom:18px">
+          <sc-for list="{{ prefWeekStartOptions }}" as="opt" hint-placeholder-count="2">
+            <button onClick="{{ opt.select }}" style="{{ opt.style }}">{{ opt.label }}</button>
+          </sc-for>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:2px 0;margin-bottom:18px">
+          <span style="font-size:13.5px;color:var(--color-text)">Sons de l'application</span>
+          <button onClick="{{ togglePrefSounds }}" style="{{ prefSoundsToggleStyle }}"><span style="{{ prefSoundsKnobStyle }}"></span></button>
+        </div>
+        <div style="font-size:12.5px;color:var(--color-neutral-700);font-weight:600;margin-bottom:8px">Couleurs de l'application</div>
+        <div style="display:flex;gap:12px">
+          <sc-for list="{{ colorThemeOptions }}" as="opt" hint-placeholder-count="4">
+            <button onClick="{{ opt.select }}" style="display:flex;flex-direction:column;align-items:center;gap:6px;background:none">
+              <span style="{{ opt.swatchStyle }}"></span>
+              <span style="font-size:11.5px;color:{{ opt.labelColor }}">{{ opt.label }}</span>
+            </button>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ membersOpen }}">
+    <div style="position:absolute;inset:0;background:rgba(32,30,29,0.4);z-index:95;display:flex;align-items:flex-end" onClick="{{ closeMembers }}">
+      <div style="width:100%;max-height:80%;overflow-y:auto;background:var(--color-bg);border-radius:24px 24px 0 0;box-shadow:var(--shadow-lg);padding:18px 20px 28px;box-sizing:border-box" onClick="{{ stopPropagation }}">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+          <div style="font-family:var(--font-heading);font-size:19px;color:var(--color-text)">Membres de la famille</div>
+          <button onClick="{{ closeMembers }}" style="width:30px;height:30px;border-radius:50%;background:var(--color-neutral-200);color:var(--color-neutral-700);font-size:16px">×</button>
+        </div>
+        <div class="card" style="border-radius:var(--radius-lg);overflow:hidden;margin-bottom:20px">
+          <sc-for list="{{ familyMembers }}" as="mem" hint-placeholder-count="2">
+            <div style="display:flex;align-items:center;gap:12px;padding:13px 16px;border-bottom:1px solid var(--color-neutral-200)">
+              <div style="{{ mem.avatarStyle }}">{{ mem.initial }}</div>
+              <input class="input" style="flex:1" value="{{ mem.name }}" onChange="{{ mem.handleChange }}"></input>
+              <span style="font-size:11.5px;color:var(--color-neutral-600);flex-shrink:0">{{ mem.roleLabel }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <div style="font-size:12.5px;color:var(--color-neutral-700);font-weight:600;margin-bottom:8px">Inviter un membre</div>
+        <div style="display:flex;gap:8px;margin-bottom:12px">
+          <input class="input" type="email" style="flex:1" placeholder="courriel@exemple.com" value="{{ inviteEmail }}" onChange="{{ handleInviteEmailChange }}"></input>
+          <button class="btn btn-primary" onClick="{{ sendInvite }}" style="padding:0 16px">Inviter</button>
+        </div>
+        <sc-if value="{{ hasPendingInvites }}">
+          <div style="font-size:12.5px;color:var(--color-neutral-700);font-weight:600;margin-bottom:8px">Invitations en attente</div>
+          <sc-for list="{{ pendingInvites }}" as="inv" hint-placeholder-count="1">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 4px;border-bottom:1px solid var(--color-neutral-200)">
+              <span style="font-size:13.5px;color:var(--color-text)">{{ inv.email }}</span>
+              <button onClick="{{ inv.cancel }}" style="font-size:12px;color:var(--color-accent-700);font-weight:600">Annuler</button>
+            </div>
+          </sc-for>
+        </sc-if>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ notificationsOpen }}">
+    <div style="position:absolute;inset:0;background:rgba(32,30,29,0.4);z-index:95;display:flex;align-items:flex-end" onClick="{{ closeNotifications }}">
+      <div style="width:100%;max-height:80%;overflow-y:auto;background:var(--color-bg);border-radius:24px 24px 0 0;box-shadow:var(--shadow-lg);padding:18px 20px 28px;box-sizing:border-box" onClick="{{ stopPropagation }}">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+          <div style="font-family:var(--font-heading);font-size:19px;color:var(--color-text)">Notifications</div>
+          <button onClick="{{ closeNotifications }}" style="width:30px;height:30px;border-radius:50%;background:var(--color-neutral-200);color:var(--color-neutral-700);font-size:16px">×</button>
+        </div>
+        <div class="card" style="border-radius:var(--radius-lg);overflow:hidden">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 16px;border-bottom:1px solid var(--color-neutral-200)">
+            <span style="font-size:14px;color:var(--color-text)">Activer les notifications</span>
+            <button onClick="{{ toggleNotifMaster }}" style="{{ notifMasterToggleStyle }}"><span style="{{ notifMasterKnobStyle }}"></span></button>
+          </div>
+          <sc-for list="{{ notificationOptions }}" as="opt" hint-placeholder-count="4">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 16px;border-bottom:1px solid var(--color-neutral-200);opacity:{{ opt.rowOpacity }}">
+              <span style="font-size:14px;color:var(--color-text)">{{ opt.label }}</span>
+              <button onClick="{{ opt.toggle }}" style="{{ opt.style }}"><span style="{{ opt.knobStyle }}"></span></button>
+            </div>
+          </sc-for>
+          <div style="padding:13px 16px">
+            <div style="font-size:13px;color:var(--color-text);margin-bottom:8px">Rappel par défaut</div>
+            <div style="display:flex;flex-wrap:wrap;gap:8px">
+              <sc-for list="{{ defaultReminderOptions }}" as="opt" hint-placeholder-count="4">
+                <button onClick="{{ opt.select }}" style="{{ opt.style }}">{{ opt.label }}</button>
+              </sc-for>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ trashReminderPromptOpen }}">
+    <div style="position:absolute;inset:0;background:rgba(32,30,29,0.4);z-index:96;display:flex;align-items:flex-end" onClick="{{ cancelTrashImport }}">
+      <div style="width:100%;max-height:80%;overflow-y:auto;background:var(--color-bg);border-radius:24px 24px 0 0;box-shadow:var(--shadow-lg);padding:18px 20px 28px;box-sizing:border-box" onClick="{{ stopPropagation }}">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+          <div style="font-family:var(--font-heading);font-size:19px;color:var(--color-text)">Rappel silencieux</div>
+          <button onClick="{{ cancelTrashImport }}" style="width:30px;height:30px;border-radius:50%;background:var(--color-neutral-200);color:var(--color-neutral-700);font-size:16px">×</button>
+        </div>
+        <div style="font-size:13px;color:var(--color-neutral-700);margin-bottom:12px">Voulez-vous être averti pour chaque collecte importée ?</div>
+        <div style="display:flex;gap:8px;margin-bottom:16px">
+          <sc-for list="{{ trashReminderModeOptions }}" as="opt" hint-placeholder-count="3">
+            <button onClick="{{ opt.select }}" style="{{ opt.style }}">{{ opt.label }}</button>
+          </sc-for>
+        </div>
+        <sc-if value="{{ trashReminderShowTime }}">
+          <div class="field" style="margin-bottom:20px">
+            <label style="font-size:12.5px;color:var(--color-neutral-700);font-weight:600">Heure du rappel</label>
+            <input class="input" type="time" value="{{ trashReminderTime }}" onChange="{{ handleTrashReminderTimeChange }}"></input>
+          </div>
+        </sc-if>
+        <button class="btn btn-primary btn-block" onClick="{{ confirmTrashImport }}">Importer</button>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ addEventOpen }}">
+    <div style="position:absolute;inset:0;background:rgba(32,30,29,0.4);z-index:90;display:flex;align-items:flex-end" onClick="{{ closeOverlays }}">
+      <div style="width:100%;max-height:80%;overflow-y:auto;background:var(--color-bg);border-radius:24px 24px 0 0;box-shadow:var(--shadow-lg);padding:18px 20px 28px;box-sizing:border-box" onClick="{{ stopPropagation }}">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+          <div style="font-family:var(--font-heading);font-size:19px;color:var(--color-text)">{{ eventModalTitle }}</div>
+          <button onClick="{{ closeOverlays }}" style="width:30px;height:30px;border-radius:50%;background:var(--color-neutral-200);color:var(--color-neutral-700);font-size:16px">×</button>
+        </div>
+        <div class="field" style="margin-bottom:14px">
+          <label style="font-size:12.5px;color:var(--color-neutral-700);font-weight:600">Titre</label>
+          <input class="input" placeholder="Ex. Rendez-vous vétérinaire" value="{{ newEventTitle }}" onChange="{{ handleNewEventTitleChange }}"></input>
+        </div>
+        <div style="display:flex;gap:10px;margin-bottom:14px">
+          <div class="field" style="flex:1">
+            <label style="font-size:12.5px;color:var(--color-neutral-700);font-weight:600">Début</label>
+            <input class="input" type="date" value="{{ newEventDate }}" onChange="{{ handleNewEventDateChange }}"></input>
+          </div>
+          <div class="field" style="flex:1">
+            <label style="font-size:12.5px;color:var(--color-neutral-700);font-weight:600">Fin (optionnel)</label>
+            <input class="input" type="date" value="{{ newEventEndDate }}" onChange="{{ handleNewEventEndDateChange }}"></input>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
+          <label style="font-size:12.5px;color:var(--color-neutral-700);font-weight:600">Heure</label>
+          <button onClick="{{ toggleAllDay }}" style="{{ allDayToggleStyle }}">Toute la journée</button>
+        </div>
+        <sc-if value="{{ showTimeField }}">
+          <div class="field" style="margin-bottom:16px">
+            <input class="input" type="time" value="{{ newEventTime }}" onChange="{{ handleNewEventTimeChange }}"></input>
+          </div>
+        </sc-if>
+        <sc-if value="{{ hideTimeField }}"><div style="margin-bottom:16px"></div></sc-if>
+        <div style="font-size:12.5px;color:var(--color-neutral-700);font-weight:600;margin-bottom:8px">Concerne</div>
+        <div style="display:flex;gap:8px;margin-bottom:16px">
+          <sc-for list="{{ eventPersonOptions }}" as="opt" hint-placeholder-count="3">
+            <button onClick="{{ opt.select }}" style="{{ opt.style }}">{{ opt.label }}</button>
+          </sc-for>
+        </div>
+        <div style="font-size:12.5px;color:var(--color-neutral-700);font-weight:600;margin-bottom:8px">Rappel</div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px">
+          <sc-for list="{{ reminderOptions }}" as="opt" hint-placeholder-count="5">
+            <button onClick="{{ opt.select }}" style="{{ opt.style }}">{{ opt.label }}</button>
+          </sc-for>
+        </div>
+        <button class="btn btn-primary btn-block" onClick="{{ submitAddEvent }}">{{ eventModalSubmitLabel }}</button>
+        <sc-if value="{{ editingEventId }}">
+          <button class="btn btn-ghost btn-block" onClick="{{ deleteEditingEvent }}" style="margin-top:10px;color:var(--color-accent-700)">Supprimer le rendez-vous</button>
+        </sc-if>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ addTaskOpen }}">
+    <div style="position:absolute;inset:0;background:rgba(32,30,29,0.4);z-index:90;display:flex;align-items:flex-end" onClick="{{ closeOverlays }}">
+      <div style="width:100%;max-height:80%;overflow-y:auto;background:var(--color-bg);border-radius:24px 24px 0 0;box-shadow:var(--shadow-lg);padding:18px 20px 28px;box-sizing:border-box" onClick="{{ stopPropagation }}">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+          <div style="font-family:var(--font-heading);font-size:19px;color:var(--color-text)">{{ taskModalTitle }}</div>
+          <button onClick="{{ closeOverlays }}" style="width:30px;height:30px;border-radius:50%;background:var(--color-neutral-200);color:var(--color-neutral-700);font-size:16px">×</button>
+        </div>
+        <div class="field" style="margin-bottom:14px">
+          <label style="font-size:12.5px;color:var(--color-neutral-700);font-weight:600">Titre</label>
+          <input class="input" placeholder="Ex. Renouveler l'assurance auto" value="{{ newTaskTitle }}" onChange="{{ handleNewTaskTitleChange }}"></input>
+        </div>
+        <div style="font-size:12.5px;color:var(--color-neutral-700);font-weight:600;margin-bottom:8px">Catégorie</div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px">
+          <sc-for list="{{ taskCategoryOptions }}" as="opt" hint-placeholder-count="4">
+            <button onClick="{{ opt.select }}" style="{{ opt.style }}">{{ opt.label }}</button>
+          </sc-for>
+        </div>
+        <div style="font-size:12.5px;color:var(--color-neutral-700);font-weight:600;margin-bottom:8px">Assignée à</div>
+        <div style="display:flex;gap:8px;margin-bottom:16px">
+          <sc-for list="{{ taskPersonOptions }}" as="opt" hint-placeholder-count="3">
+            <button onClick="{{ opt.select }}" style="{{ opt.style }}">{{ opt.label }}</button>
+          </sc-for>
+        </div>
+        <div style="display:flex;gap:10px;margin-bottom:10px">
+          <div class="field" style="flex:1">
+            <label style="font-size:12.5px;color:var(--color-neutral-700);font-weight:600">Date (optionnel)</label>
+            <input class="input" type="date" value="{{ newTaskDate }}" onChange="{{ handleNewTaskDateChange }}"></input>
+          </div>
+          <div class="field" style="flex:1">
+            <label style="font-size:12.5px;color:var(--color-neutral-700);font-weight:600">Heure (optionnel)</label>
+            <input class="input" type="time" value="{{ newTaskTime }}" onChange="{{ handleNewTaskTimeChange }}"></input>
+          </div>
+        </div>
+        <div style="font-size:12.5px;color:var(--color-neutral-700);font-weight:600;margin-bottom:8px">Rappel</div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px">
+          <sc-for list="{{ taskReminderOptions }}" as="opt" hint-placeholder-count="5">
+            <button onClick="{{ opt.select }}" style="{{ opt.style }}">{{ opt.label }}</button>
+          </sc-for>
+        </div>
+        <button class="btn btn-primary btn-block" onClick="{{ submitAddTask }}">{{ taskModalSubmitLabel }}</button>
+        <sc-if value="{{ editingTaskId }}">
+          <button class="btn btn-ghost btn-block" onClick="{{ deleteEditingTask }}" style="margin-top:10px;color:var(--color-accent-700)">Supprimer la tâche</button>
+        </sc-if>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ recipeDetailOpen }}">
+    <div style="position:absolute;inset:0;background:rgba(32,30,29,0.4);z-index:90;display:flex;align-items:flex-end" onClick="{{ closeOverlays }}">
+      <div style="width:100%;max-height:84%;overflow-y:auto;background:var(--color-bg);border-radius:24px 24px 0 0;box-shadow:var(--shadow-lg)" onClick="{{ stopPropagation }}">
+        <div style="position:relative;width:100%;aspect-ratio:16/9">
+          <image-slot id="{{ selectedRecipe.slotId }}" shape="rect" placeholder="{{ selectedRecipe.name }}"></image-slot>
+          <button onClick="{{ closeOverlays }}" style="position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:50%;background:rgba(32,30,29,0.5);color:#fff;font-size:17px;z-index:5">×</button>
+        </div>
+        <div style="padding:18px 22px 30px">
+          <div style="font-family:var(--font-heading);font-size:22px;color:var(--color-text)">{{ selectedRecipe.name }}</div>
+          <div style="font-size:13px;color:var(--color-neutral-700);margin-top:4px">{{ selectedRecipe.time }} · {{ selectedRecipe.tag }}</div>
+          <div style="font-family:var(--font-heading);font-size:16px;color:var(--color-text);margin:18px 0 8px">Ingrédients</div>
+          <div class="card" style="border-radius:var(--radius-lg);overflow:hidden">
+            <sc-for list="{{ selectedRecipeIngredients }}" as="ing" hint-placeholder-count="5">
+              <div style="display:flex;align-items:center;gap:10px;padding:11px 14px;border-bottom:1px solid var(--color-neutral-200)">
+                <div style="flex:1;font-size:14.5px;color:var(--color-text)">{{ ing.name }}</div>
+                <button onClick="{{ ing.add }}" style="{{ ing.buttonStyle }}">{{ ing.buttonLabel }}</button>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+</div>
+</x-import>
+</div>
+</helmet>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 465, &quot;height&quot;: 924}, &quot;defaultTab&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;default&quot;: &quot;home&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;options&quot;: [&quot;home&quot;, &quot;calendar&quot;, &quot;tasks&quot;, &quot;meals&quot;, &quot;grocery&quot;], &quot;section&quot;: &quot;Comportement&quot;}}">
+const PEOPLE = {
+  moi: { name: 'Moi', color: 'var(--color-accent-300)', text: 'var(--color-accent-800)' },
+  julie: { name: 'Julie', color: 'var(--color-accent-2-300)', text: 'var(--color-accent-2-800)' },
+  both: { name: 'Vous deux', color: 'var(--color-neutral-600)', text: 'var(--color-neutral-100)' },
+};
+
+const RECIPES = [
+  { id: 'r1', slotId: 'recipe-1', name: 'Poulet parmesan', time: '35 min', tag: 'Plat principal',
+    ingredients: ['Poitrines de poulet', 'Chapelure', 'Parmesan râpé', 'Sauce tomate', 'Mozzarella', 'Pâtes courtes'] },
+  { id: 'r2', slotId: 'recipe-2', name: 'Buddha bowl au tofu', time: '25 min', tag: 'Végétarien',
+    ingredients: ['Tofu ferme', 'Riz basmati', 'Brocoli', 'Carottes', 'Sauce tahini', 'Graines de sésame'] },
+  { id: 'r3', slotId: 'recipe-3', name: 'Chili sin carne', time: '40 min', tag: 'Mijoté',
+    ingredients: ['Haricots rouges', 'Haricots noirs', 'Tomates en dés', 'Maïs', 'Oignon', 'Épices à chili'] },
+  { id: 'r4', slotId: 'recipe-4', name: 'Saumon grillé & légumes', time: '30 min', tag: 'Poisson',
+    ingredients: ['Filets de saumon', 'Asperges', 'Citron', 'Huile d\'olive', 'Aneth frais', 'Pommes de terre grelot'] },
+  { id: 'r5', slotId: 'recipe-5', name: 'Pâtes au pesto', time: '20 min', tag: 'Rapide',
+    ingredients: ['Pâtes longues', 'Basilic frais', 'Pignons de pin', 'Parmesan', 'Ail', 'Huile d\'olive'] },
+  { id: 'r6', slotId: 'recipe-6', name: 'Tacos au poulet', time: '30 min', tag: 'Mexicain',
+    ingredients: ['Tortillas', 'Poulet effiloché', 'Salsa', 'Avocat', 'Coriandre fraîche', 'Lime'] },
+];
+
+const COLOR_PALETTES = {
+  printanier: {
+    '--color-bg': '#f9efe9', '--color-surface': '#f0e0d8', '--color-text': '#232c47',
+    '--color-accent': '#cf7669', '--color-accent-2': '#3f8fa0',
+    '--color-accent-100': '#fdeeea', '--color-accent-200': '#f8d6cd', '--color-accent-300': '#f0b3a8', '--color-accent-400': '#dd8f7f', '--color-accent-500': '#cf7669', '--color-accent-600': '#b35d51', '--color-accent-700': '#8f4a41', '--color-accent-800': '#6c3831', '--color-accent-900': '#472521',
+    '--color-accent-2-100': '#eef6f5', '--color-accent-2-200': '#d9ebe7', '--color-accent-2-300': '#c7ddd3', '--color-accent-2-400': '#7db9bd', '--color-accent-2-500': '#4d95a8', '--color-accent-2-600': '#3c7a8c', '--color-accent-2-700': '#2d5f6e', '--color-accent-2-800': '#1f4550', '--color-accent-2-900': '#142e35',
+  },
+  sauge: {
+    '--color-bg': '#fdf6ea', '--color-surface': '#faead3', '--color-text': '#3a4a34',
+    '--color-accent': '#e8836b', '--color-accent-2': '#8a9e78',
+    '--color-accent-100': '#fdeeea', '--color-accent-200': '#fad3c8', '--color-accent-300': '#f5b09d', '--color-accent-400': '#ef9c81', '--color-accent-500': '#e8836b', '--color-accent-600': '#c96852', '--color-accent-700': '#a1533f', '--color-accent-800': '#763c2d', '--color-accent-900': '#4c261c',
+    '--color-accent-2-100': '#f0f2ea', '--color-accent-2-200': '#dde3cd', '--color-accent-2-300': '#c5d0ac', '--color-accent-2-400': '#a3b58a', '--color-accent-2-500': '#8a9e78', '--color-accent-2-600': '#6f8060', '--color-accent-2-700': '#57644b', '--color-accent-2-800': '#3f4936', '--color-accent-2-900': '#282f22',
+  },
+  lavande: {
+    '--color-bg': '#f5eef9', '--color-surface': '#ece0f2', '--color-text': '#232c47',
+    '--color-accent': '#8b6bb0', '--color-accent-2': '#d29a2e',
+    '--color-accent-100': '#f4eef9', '--color-accent-200': '#e3d2ef', '--color-accent-300': '#cbaddf', '--color-accent-400': '#ac84c9', '--color-accent-500': '#8b6bb0', '--color-accent-600': '#705490', '--color-accent-700': '#584270', '--color-accent-800': '#403050', '--color-accent-900': '#292033',
+    '--color-accent-2-100': '#fdf6e3', '--color-accent-2-200': '#f8e7b8', '--color-accent-2-300': '#f0d183', '--color-accent-2-400': '#e3b654', '--color-accent-2-500': '#d29a2e', '--color-accent-2-600': '#b17f22', '--color-accent-2-700': '#8c631b', '--color-accent-2-800': '#684a14', '--color-accent-2-900': '#43300d',
+  },
+  ocean: {
+    '--color-bg': '#eaf4f6', '--color-surface': '#d9ecef', '--color-text': '#232c47',
+    '--color-accent': '#3f8fa0', '--color-accent-2': '#cf7669',
+    '--color-accent-100': '#eef6f5', '--color-accent-200': '#d9ebe7', '--color-accent-300': '#c7ddd3', '--color-accent-400': '#7db9bd', '--color-accent-500': '#4d95a8', '--color-accent-600': '#3c7a8c', '--color-accent-700': '#2d5f6e', '--color-accent-800': '#1f4550', '--color-accent-900': '#142e35',
+    '--color-accent-2-100': '#fdeeea', '--color-accent-2-200': '#f8d6cd', '--color-accent-2-300': '#f0b3a8', '--color-accent-2-400': '#dd8f7f', '--color-accent-2-500': '#cf7669', '--color-accent-2-600': '#b35d51', '--color-accent-2-700': '#8f4a41', '--color-accent-2-800': '#6c3831', '--color-accent-2-900': '#472521',
+  },
+};
+const COLOR_PALETTE_LABELS = { printanier: 'Printanier', sauge: 'Sauge', lavande: 'Lavande', ocean: 'Océan' };
+function applyColorPalette(key) {
+  const p = COLOR_PALETTES[key];
+  if (!p) return;
+  Object.entries(p).forEach(([k, v]) => document.documentElement.style.setProperty(k, v));
+}
+
+const MONTH_NAMES = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
+const WEEKDAY_LETTERS = ['D','L','M','M','J','V','S'];
+const CAL_BASE_DATE = new Date(2026, 7, 9);
+const addDays = (d, n) => { const r = new Date(d); r.setDate(r.getDate() + n); return r; };
+const addMonths = (d, n) => { const r = new Date(d); r.setMonth(r.getMonth() + n); return r; };
+const startOfWeek = (d) => { const r = new Date(d); r.setDate(r.getDate() - r.getDay()); r.setHours(0,0,0,0); return r; };
+const startOfMonth = (d) => new Date(d.getFullYear(), d.getMonth(), 1);
+const toISO = (d) => `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+const isSameDay = (a, b) => toISO(a) === toISO(b);
+const formatTimeFR = (hhmm) => {
+  const [h, m] = hhmm.split(':').map(Number);
+  return m ? `${h}h${String(m).padStart(2,'0')}` : `${h}h00`;
+};
+
+const WEEK_META = [
+  { weekday: 'Dim', weekdayShort: 'D', num: 9 },
+  { weekday: 'Lundi', weekdayShort: 'L', num: 10 },
+  { weekday: 'Mardi', weekdayShort: 'M', num: 11 },
+  { weekday: 'Mercredi', weekdayShort: 'M', num: 12 },
+  { weekday: 'Jeudi', weekdayShort: 'J', num: 13 },
+  { weekday: 'Vendredi', weekdayShort: 'V', num: 14 },
+  { weekday: 'Samedi', weekdayShort: 'S', num: 15 },
+];
+
+const INITIAL_EVENTS = [
+  { id: 'e1', dayIndex: 0, title: 'Dîner en famille chez les parents', time: '12h00', person: 'both' },
+  { id: 'e2', dayIndex: 1, title: 'Sortir les poubelles', time: 'Soir', person: 'both' },
+  { id: 'e3', dayIndex: 2, title: 'Rendez-vous dentiste — Julie', time: '14h00', person: 'julie' },
+  { id: 'e4', dayIndex: 4, title: 'Rendez-vous médecin — Moi', time: '9h30', person: 'moi' },
+  { id: 'e5', dayIndex: 5, title: 'Cours de yoga', time: '18h00', person: 'julie' },
+];
+
+const REMINDER_META = {
+  none: 'Aucun', '15m': '15 min avant', '1h': '1 h avant', '1d': '1 jour avant', '2d': '2 jours avant', '1w': '1 semaine avant',
+};
+
+const CATEGORY_META = {
+  entretien: { label: 'Entretien', tagClass: 'tag-accent-2' },
+  renovation: { label: 'Rénovation', tagClass: 'tag-outline' },
+  finances: { label: 'Finances', tagClass: 'tag-neutral' },
+};
+
+const INITIAL_TASKS = [
+  { id: 't1', category: 'entretien', title: 'Rendez-vous dentiste — Julie', due: '12 août, 14h00', date: '2026-08-12', time: '14:00', person: 'julie', completed: false, completedBy: null },
+  { id: 't2', category: 'entretien', title: 'Rendez-vous médecin — Moi', due: '14 août, 9h30', date: '2026-08-14', time: '09:30', person: 'moi', completed: false, completedBy: null },
+  { id: 't3', category: 'entretien', title: 'Sortir les poubelles', due: 'Chaque mardi soir', date: '2026-08-11', person: 'both', completed: false, completedBy: null },
+  { id: 't4', category: 'entretien', title: 'Entretenir les plantes', due: 'Chaque dimanche', date: '2026-08-09', person: 'julie', completed: true, completedBy: 'julie' },
+  { id: 't5', category: 'entretien', title: "Entretenir l'adoucisseur d'eau", due: '1er du mois', date: '2026-09-01', person: 'moi', completed: false, completedBy: null },
+  { id: 't6', category: 'finances', title: 'Taxes municipales', due: 'Échéance : 30 septembre', date: '2026-09-30', person: 'moi', completed: false, completedBy: null },
+  { id: 't7', category: 'finances', title: 'Taxes scolaires', due: 'Échéance : 30 septembre', date: '2026-09-30', person: 'moi', completed: false, completedBy: null },
+  { id: 't8', category: 'finances', title: 'Permis de conduire', due: 'Échéance : 22 novembre', date: '2026-11-22', person: 'julie', completed: false, completedBy: null },
+  { id: 't9', category: 'renovation', title: 'Entretien fosse septique', due: 'Échéance : 15 octobre', date: '2026-10-15', person: 'moi', completed: false, completedBy: null },
+  { id: 't10', category: 'finances', title: 'Assurances (habitation, auto)', due: 'Échéance : 1er décembre', date: '2026-12-01', person: 'both', completed: true, completedBy: 'moi' },
+  { id: 't11', category: 'finances', title: 'Ordre professionnel', due: 'Échéance : 31 mars', date: '2027-03-31', person: 'julie', completed: false, completedBy: null },
+  { id: 't12', category: 'entretien', title: 'Renouveler la contraception', due: 'Chaque mois — 20', date: '2026-08-20', person: 'julie', completed: false, completedBy: null },
+];
+
+const INITIAL_GROCERY = [
+  { id: 'g1', name: 'Lait', checked: false, fromRecipe: false },
+  { id: 'g2', name: 'Café', checked: true, fromRecipe: false },
+  { id: 'g3', name: 'Papier essuie-tout', checked: false, fromRecipe: false },
+];
+
+class Component extends DCLogic {
+  componentDidMount() {
+    PEOPLE.moi.name = this.state.accountName.trim() || 'Moi';
+    applyColorPalette(this.state.colorTheme);
+  }
+
+  state = {
+    activeTab: 'home',
+    currentUser: 'moi',
+    selectedDayIndex: 0,
+    calendarView: 'week',
+    calendarAnchor: CAL_BASE_DATE,
+    homeDayOffset: 0,
+    selectedDate: toISO(CAL_BASE_DATE),
+    tasks: INITIAL_TASKS,
+    events: INITIAL_EVENTS,
+    mealPlan: {
+      [toISO(addDays(CAL_BASE_DATE, 0))]: 'r2',
+      [toISO(addDays(CAL_BASE_DATE, 2))]: 'r5',
+    },
+    mealWeekAnchor: CAL_BASE_DATE,
+    groceryList: INITIAL_GROCERY,
+    groceryInputValue: '',
+    selectedRecipeId: null,
+    pickerDayIndex: null,
+    aiDayIndex: null,
+    aiQuery: '',
+    dragDayIndex: null,
+    addTaskOpen: false,
+    newTaskTitle: '',
+    newTaskCategory: 'entretien',
+    newTaskPerson: 'moi',
+    newTaskDate: '',
+    newTaskTime: '',
+    newTaskReminders: [],
+    addEventOpen: false,
+    newEventTitle: '',
+    newEventDate: toISO(CAL_BASE_DATE),
+    newEventEndDate: '',
+    newEventTime: '14:00',
+    newEventAllDay: false,
+    newEventPerson: 'moi',
+    newEventReminders: ['1d'],
+    settingsOpen: false,
+    importOpen: false,
+    accountOpen: false,
+    accountName: 'Moi',
+    accountEmail: 'moi@famille.ca',
+    membersOpen: false,
+    julieName: 'Julie',
+    prefsOpen: false,
+    financeProofPromptOpen: false,
+    financeProofTaskId: null,
+    taskFilter: 'all',
+    receiptViewerImage: null,
+    prefLanguage: 'fr',
+    prefTimeFormat: '24h',
+    prefWeekStart: 'dimanche',
+    prefSounds: true,
+    colorTheme: 'printanier',
+    inviteEmail: '',
+    pendingInvites: [],
+    notificationsOpen: false,
+    notifEnabled: true,
+    notifTypes: { rdv: true, taches: true, repas: false },
+    defaultReminder: '1d',
+    icsImportMessage: '',
+    trashReminderPromptOpen: false,
+    trashReminderMode: 'silent',
+    trashReminderTime: '18:00',
+    pendingTrashFile: null,
+    editingEventId: null,
+    editingTaskId: null,
+  };
+
+  toggleTask(id) {
+    this.setState(s => {
+      const task = s.tasks.find(t => t.id === id);
+      const willComplete = task && !task.completed;
+      const tasks = s.tasks.map(t => t.id === id
+        ? { ...t, completed: !t.completed, completedBy: !t.completed ? s.currentUser : null, completedDate: !t.completed ? toISO(CAL_BASE_DATE) : null }
+        : t);
+      const openProof = willComplete && task.category === 'finances';
+      return {
+        tasks,
+        financeProofPromptOpen: openProof ? true : s.financeProofPromptOpen,
+        financeProofTaskId: openProof ? id : s.financeProofTaskId,
+      };
+    });
+  }
+
+  attachFinanceProof(file) {
+    const id = this.state.financeProofTaskId;
+    if (!id || !file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      this.setState(s => ({
+        tasks: s.tasks.map(t => t.id === id ? { ...t, receiptImage: reader.result } : t),
+        financeProofPromptOpen: false, financeProofTaskId: null,
+      }));
+    };
+    reader.readAsDataURL(file);
+  }
+
+  toggleGrocery(id) {
+    this.setState(s => ({ groceryList: s.groceryList.map(g => g.id === id ? { ...g, checked: !g.checked } : g) }));
+  }
+
+  addGroceryItem() {
+    const name = this.state.groceryInputValue.trim();
+    if (!name) return;
+    this.setState(s => ({
+      groceryList: [...s.groceryList, { id: 'g' + Date.now(), name, checked: false, fromRecipe: false }],
+      groceryInputValue: '',
+    }));
+  }
+
+  removeGroceryItem(id) {
+    this.setState(s => ({ groceryList: s.groceryList.filter(g => g.id !== id) }));
+  }
+
+  clearCheckedGroceryItems() {
+    this.setState(s => ({ groceryList: s.groceryList.filter(g => !g.checked) }));
+  }
+
+  addIngredientToGrocery(name) {
+    if (this.state.groceryList.some(g => g.name.toLowerCase() === name.toLowerCase())) return;
+    this.setState(s => ({
+      groceryList: [...s.groceryList, { id: 'g' + Date.now() + Math.random(), name, checked: false, fromRecipe: true }],
+    }));
+  }
+
+  assignMeal(iso, recipeId) {
+    this.setState(s => ({
+      mealPlan: { ...s.mealPlan, [iso]: recipeId },
+      pickerDayIndex: null, aiDayIndex: null,
+    }));
+  }
+
+  clearMeal(iso) {
+    this.setState(s => ({ mealPlan: { ...s.mealPlan, [iso]: null } }));
+  }
+
+  swapMeals(fromIso, toIso) {
+    if (fromIso === toIso) return;
+    this.setState(s => {
+      const plan = { ...s.mealPlan };
+      const tmp = plan[toIso];
+      plan[toIso] = plan[fromIso];
+      plan[fromIso] = tmp;
+      return { mealPlan: plan, dragDayIndex: null };
+    });
+  }
+
+  submitAddEvent() {
+    const s = this.state;
+    const title = s.newEventTitle.trim();
+    if (!title || !s.newEventDate) return;
+    const startD = new Date(s.newEventDate + 'T00:00:00');
+    let endD = s.newEventEndDate ? new Date(s.newEventEndDate + 'T00:00:00') : startD;
+    if (endD < startD) endD = startD;
+    const dayIndex = Math.round((startD - CAL_BASE_DATE) / 86400000);
+    const endDayIndex = Math.round((endD - CAL_BASE_DATE) / 86400000);
+    const eventData = {
+      dayIndex, endDayIndex, title,
+      time: s.newEventAllDay ? 'Toute la journée' : formatTimeFR(s.newEventTime),
+      person: s.newEventPerson,
+      reminders: s.newEventReminders.filter(r => r !== 'none'),
+    };
+    this.setState(st => ({
+      events: s.editingEventId
+        ? st.events.map(e => e.id === s.editingEventId ? { ...e, ...eventData } : e)
+        : [...st.events, { id: 'e' + Date.now(), ...eventData }],
+      addEventOpen: false, newEventTitle: '', newEventEndDate: '', newEventTime: '14:00', newEventAllDay: false, newEventPerson: 'moi', newEventReminders: ['1d'],
+      editingEventId: null,
+      selectedDate: s.newEventDate,
+    }));
+  }
+
+  handleIcsImport(file, mode, reminderTime, reminderMode) {
+    const reader = new FileReader();
+    reader.onload = () => {
+      // unfold ICS line continuations (a leading space/tab means "join with previous line")
+      const text = reader.result.replace(/\r\n[ \t]/g, '').replace(/\n[ \t]/g, '');
+      const blocks = text.split('BEGIN:VEVENT').slice(1);
+      const parseDt = (v) => {
+        const m = v.match(/(\d{4})(\d{2})(\d{2})(?:T(\d{2})(\d{2}))?/);
+        if (!m) return null;
+        return new Date(+m[1], +m[2] - 1, +m[3], m[4] ? +m[4] : 0, m[5] ? +m[5] : 0);
+      };
+      const newTasks = [];
+      const newEvents = [];
+      blocks.forEach(b => {
+        b = b.split('END:VEVENT')[0];
+        const summaryM = b.match(/SUMMARY:(.*)/);
+        const dtStartM = b.match(/DTSTART[^:]*:(\S+)/);
+        const dtStartFullM = b.match(/DTSTART([^:]*):(\S+)/);
+        const dtEndFullM = b.match(/DTEND([^:]*):(\S+)/);
+        if (!summaryM || !dtStartM) return;
+        const start = parseDt(dtStartM[1]);
+        // all-day events are marked VALUE=DATE and/or carry no time component (no "T" and no midnight-only trick)
+        const isAllDay = (dtStartFullM && /VALUE=DATE/.test(dtStartFullM[1])) || !/T/.test(dtStartM[1]);
+        const hasTime = !isAllDay;
+        if (!start) return;
+        // imported feeds are collection/reminder days: some sources (e.g. waste pickup calendars) encode
+        // a multi-day "display window" in DTEND for a single pickup day — always use the start day only.
+        const iso = toISO(start);
+        const timeHHMM = hasTime ? `${String(start.getHours()).padStart(2,'0')}:${String(start.getMinutes()).padStart(2,'0')}` : null;
+        if (mode === 'trash') {
+          const wantsReminder = reminderMode !== 'none';
+          const taskTime = wantsReminder ? (reminderTime || timeHHMM) : null;
+          const reminderLabel = reminderMode === 'silent' ? ' (rappel silencieux)' : reminderMode === 'standard' ? ' (rappel)' : '';
+          newTasks.push({
+            id: 't' + Date.now() + Math.random(), category: 'entretien',
+            title: summaryM[1].trim(),
+            due: `${start.getDate()} ${MONTH_NAMES[start.getMonth()]}${taskTime ? ', ' + formatTimeFR(taskTime) + reminderLabel : ''}`,
+            date: iso, time: taskTime,
+            person: 'both', reminders: wantsReminder ? [reminderMode] : [], completed: false, completedBy: null,
+          });
+        } else {
+          let end = dtEndFullM ? parseDt(dtEndFullM[2]) : start;
+          // ICS all-day DTEND is exclusive (the day after the event actually ends) — roll it back one day
+          if (end && isAllDay) end = addDays(end, -1);
+          const dayIndex = Math.round((new Date(start.getFullYear(), start.getMonth(), start.getDate()) - CAL_BASE_DATE) / 86400000);
+          const endDayIndex = end ? Math.round((new Date(end.getFullYear(), end.getMonth(), end.getDate()) - CAL_BASE_DATE) / 86400000) : dayIndex;
+          newEvents.push({
+            id: 'e' + Date.now() + Math.random(), dayIndex, endDayIndex: Math.max(dayIndex, endDayIndex),
+            title: summaryM[1].trim(), time: timeHHMM ? formatTimeFR(timeHHMM) : 'Toute la journée',
+            person: 'both', reminders: [],
+          });
+        }
+      });
+      this.setState(s => ({
+        tasks: mode === 'trash' ? [...s.tasks, ...newTasks] : s.tasks,
+        events: mode === 'trash' ? s.events : [...s.events, ...newEvents],
+        icsImportMessage: mode === 'trash'
+          ? (newTasks.length ? `${newTasks.length} tâche(s) importée(s).` : 'Aucun évènement trouvé dans ce fichier.')
+          : (newEvents.length ? `${newEvents.length} évènement(s) importé(s).` : 'Aucun évènement trouvé dans ce fichier.'),
+      }));
+    };
+    reader.readAsText(file);
+  }
+
+  deleteEditingEvent() {
+    const id = this.state.editingEventId;
+    if (!id) return;
+    this.setState(st => ({ events: st.events.filter(e => e.id !== id), addEventOpen: false, editingEventId: null }));
+  }
+
+  openEditEvent(ev) {
+    this.setState({
+      addEventOpen: true, editingEventId: ev.id,
+      newEventTitle: ev.title,
+      newEventDate: toISO(addDays(CAL_BASE_DATE, ev.dayIndex)),
+      newEventEndDate: (ev.endDayIndex != null && ev.endDayIndex !== ev.dayIndex) ? toISO(addDays(CAL_BASE_DATE, ev.endDayIndex)) : '',
+      newEventAllDay: ev.time === 'Toute la journée',
+      newEventTime: ev.time === 'Toute la journée' ? '14:00' : this.state.newEventTime,
+      newEventPerson: ev.person,
+      newEventReminders: ev.reminders && ev.reminders.length ? ev.reminders : ['none'],
+    });
+  }
+
+  submitAddTask() {
+    const s = this.state;
+    const title = s.newTaskTitle.trim();
+    if (!title) return;
+    const due = s.newTaskDate
+      ? `${new Date(s.newTaskDate + 'T00:00:00').getDate()} ${MONTH_NAMES[new Date(s.newTaskDate + 'T00:00:00').getMonth()]}${s.newTaskTime ? ', ' + formatTimeFR(s.newTaskTime) : ''}`
+      : 'Ajoutée par ' + PEOPLE[s.currentUser].name;
+    const extra = { category: s.newTaskCategory, title, person: s.newTaskPerson, due, date: s.newTaskDate || null, time: s.newTaskTime || null, reminders: s.newTaskReminders };
+    this.setState(st => ({
+      tasks: s.editingTaskId
+        ? st.tasks.map(t => t.id === s.editingTaskId ? { ...t, ...extra } : t)
+        : [...st.tasks, { id: 't' + Date.now(), ...extra, completed: false, completedBy: null }],
+      addTaskOpen: false, newTaskTitle: '', newTaskCategory: 'entretien', newTaskPerson: 'moi',
+      newTaskDate: '', newTaskTime: '', newTaskReminders: [], editingTaskId: null,
+    }));
+  }
+
+  deleteEditingTask() {
+    const id = this.state.editingTaskId;
+    if (!id) return;
+    this.setState(st => ({ tasks: st.tasks.filter(t => t.id !== id), addTaskOpen: false, editingTaskId: null }));
+  }
+
+  openEditTask(task) {
+    this.setState({
+      addTaskOpen: true, editingTaskId: task.id,
+      newTaskTitle: task.title, newTaskCategory: task.category, newTaskPerson: task.person,
+      newTaskDate: task.date || '', newTaskTime: task.time || '', newTaskReminders: task.reminders || [],
+    });
+  }
+
+  renderVals() {
+    const s = this.state;
+    const currentUser = PEOPLE[s.currentUser];
+    const checkboxStyle = (done) => `width:22px;height:22px;border-radius:7px;flex-shrink:0;display:flex;align-items:center;justify-content:center;border:2px solid ${done ? 'var(--color-accent-400)' : 'var(--color-neutral-400)'};background:${done ? 'var(--color-accent-400)' : 'transparent'}`;
+
+    const AVATAR_INITIALS = {
+      moi: PEOPLE.moi.name.trim().charAt(0).toUpperCase() || 'M',
+      julie: PEOPLE.julie.name.trim().charAt(0).toUpperCase() || 'J',
+      both: (PEOPLE.moi.name.trim().charAt(0) + PEOPLE.julie.name.trim().charAt(0)).toUpperCase() || 'MJ',
+    };
+    const ASSIGN_CYCLE = ['moi', 'julie', 'both'];
+    const buildTaskRow = (t) => ({
+      ...t,
+      dotColor: PEOPLE[t.person].color,
+      avatarInitial: AVATAR_INITIALS[t.person],
+      avatarStyle: `width:22px;height:22px;border-radius:50%;background:${PEOPLE[t.person].color};display:flex;align-items:center;justify-content:center;color:${PEOPLE[t.person].text};font-size:${t.person === 'both' ? 8 : 10}px;font-weight:700;flex-shrink:0`,
+      cycleAssignee: () => this.setState(s => ({
+        tasks: s.tasks.map(x => x.id === t.id ? { ...x, person: ASSIGN_CYCLE[(ASSIGN_CYCLE.indexOf(x.person) + 1) % 3] } : x)
+      })),
+      categoryLabel: CATEGORY_META[t.category].label,
+      tagClass: CATEGORY_META[t.category].tagClass,
+      checkboxStyle: checkboxStyle(t.completed),
+      titleStyle: t.completed
+        ? 'font-size:15px;color:var(--color-neutral-600);text-decoration:line-through'
+        : 'font-size:15px;color:var(--color-text);font-weight:500',
+      metaLabel: t.completed
+        ? `Fait par ${PEOPLE[t.completedBy].name}${t.completedDate ? ' le ' + new Date(t.completedDate + 'T00:00:00').getDate() + ' ' + MONTH_NAMES[new Date(t.completedDate + 'T00:00:00').getMonth()] : ''}`
+        : t.due,
+      toggle: () => this.toggleTask(t.id),
+      openEdit: () => this.openEditTask(t),
+      hasReceipt: !!t.receiptImage,
+      viewReceipt: (e) => { e.stopPropagation(); this.setState({ receiptViewerImage: t.receiptImage }); },
+    });
+
+    const tasksWithRows = s.tasks.map(buildTaskRow);
+    const filteredTasksWithRows = tasksWithRows.filter(t =>
+      s.taskFilter === 'done' ? t.completed : s.taskFilter === 'pending' ? !t.completed : true
+    );
+    const categoriesList = ['entretien', 'renovation', 'finances'].map(key => ({
+      key, label: CATEGORY_META[key].label,
+      tasks: filteredTasksWithRows.filter(t => t.category === key),
+    }));
+
+    const todayIso = toISO(CAL_BASE_DATE);
+    const homeWindowStart = toISO(addDays(CAL_BASE_DATE, 1));
+    const homeWindowEnd = toISO(addDays(CAL_BASE_DATE, 10));
+    const upcomingTasks = tasksWithRows
+      .filter(t => !t.completed && t.date && t.date >= homeWindowStart && t.date <= homeWindowEnd)
+      .sort((a, b) => a.date.localeCompare(b.date))
+      .slice(0, 5);
+    const todaysTasks = tasksWithRows.filter(t => t.date === todayIso);
+
+    const eventsWithMeta = s.events.map(ev => ({
+      ...ev, color: PEOPLE[ev.person].color,
+      personLabel: PEOPLE[ev.person].name,
+      tagClass: ev.person === 'moi' ? 'tag-accent' : ev.person === 'julie' ? 'tag-accent-2' : 'tag-neutral',
+      reminderSuffix: (ev.reminders && ev.reminders.length) ? ` · Rappel ${ev.reminders.map(r => REMINDER_META[r]).join(', ')}` : '',
+      openEdit: () => this.openEditEvent(ev),
+      spanSuffix: (ev.endDayIndex != null && ev.endDayIndex !== ev.dayIndex)
+        ? ` · ${addDays(CAL_BASE_DATE, ev.dayIndex).getDate()}–${addDays(CAL_BASE_DATE, ev.endDayIndex).getDate()} ${MONTH_NAMES[addDays(CAL_BASE_DATE, ev.endDayIndex).getMonth()]}`
+        : '',
+    }));
+
+    // events keyed by real ISO date range, anchored so dayIndex 0 = CAL_BASE_DATE
+    const eventsByDate = eventsWithMeta.map(e => ({
+      ...e,
+      isoStart: toISO(addDays(CAL_BASE_DATE, e.dayIndex)),
+      isoEnd: toISO(addDays(CAL_BASE_DATE, e.endDayIndex != null ? e.endDayIndex : e.dayIndex)),
+    }));
+    const eventsOnDate = (iso) => eventsByDate.filter(e => iso >= e.isoStart && iso <= e.isoEnd);
+
+    const homeDate = addDays(CAL_BASE_DATE, s.homeDayOffset);
+    const todayEvents = eventsOnDate(toISO(homeDate));
+    const todayTasksForCard = tasksWithRows.filter(t => t.date === toISO(homeDate));
+    const homeDayLabel = s.homeDayOffset === 0
+      ? "Aujourd'hui"
+      : `${['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'][homeDate.getDay()]} ${homeDate.getDate()} ${MONTH_NAMES[homeDate.getMonth()]}`;
+
+    const isWeekView = s.calendarView === 'week';
+    const isMonthView = s.calendarView === 'month';
+    const selectDate = (d) => this.setState({ selectedDate: toISO(d) });
+
+    const weekStart = startOfWeek(s.calendarAnchor);
+    const weekDaysCal = Array.from({ length: 7 }, (_, i) => {
+      const d = addDays(weekStart, i);
+      const iso = toISO(d);
+      const dayEvents = eventsOnDate(iso);
+      const active = iso === s.selectedDate;
+      return {
+        iso, weekdayShort: WEEKDAY_LETTERS[d.getDay()], dateNum: d.getDate(),
+        hasDot: dayEvents.length > 0,
+        dots: [...new Set(dayEvents.map(e => e.color))],
+        select: () => selectDate(d),
+        chipStyle: `width:42px;padding:8px 0;border-radius:14px;text-align:center;background:${active ? 'var(--color-accent-300)' : 'var(--color-neutral-100)'};color:${active ? 'var(--color-accent-800)' : 'var(--color-text)'};flex-shrink:0`,
+      };
+    });
+
+    const monthStart = startOfMonth(s.calendarAnchor);
+    const gridStart = startOfWeek(monthStart);
+    const monthWeeks = Array.from({ length: 6 }, (_, w) => ({
+      key: w,
+      days: Array.from({ length: 7 }, (_, i) => {
+        const d = addDays(gridStart, w * 7 + i);
+        const iso = toISO(d);
+        const dayEvents = eventsOnDate(iso);
+        const inMonth = d.getMonth() === monthStart.getMonth();
+        const active = iso === s.selectedDate;
+        return {
+          iso, dateNum: d.getDate(),
+          hasDot: dayEvents.length > 0,
+          dots: [...new Set(dayEvents.map(e => e.color))],
+          select: () => selectDate(d),
+          cellStyle: `aspect-ratio:1;border-radius:10px;font-size:13px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;background:${active ? 'var(--color-accent-300)' : 'transparent'};color:${active ? 'var(--color-accent-800)' : inMonth ? 'var(--color-text)' : 'var(--color-neutral-400)'};font-weight:${active ? 700 : 500}`,
+        };
+      }),
+    }));
+    const monthWeekdayLabels = WEEKDAY_LETTERS.map((l, i) => ({ key: i, label: l }));
+
+    const selectedDateObj = new Date(s.selectedDate + 'T00:00:00');
+    const selectedDayEvents = eventsOnDate(s.selectedDate);
+    const selectedDayMeta = {
+      weekday: ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'][selectedDateObj.getDay()],
+      num: selectedDateObj.getDate(),
+      month: MONTH_NAMES[selectedDateObj.getMonth()],
+    };
+
+    const periodLabel = isWeekView
+      ? `${weekStart.getDate()} – ${addDays(weekStart, 6).getDate()} ${MONTH_NAMES[addDays(weekStart, 6).getMonth()]}`
+      : `${MONTH_NAMES[monthStart.getMonth()][0].toUpperCase()}${MONTH_NAMES[monthStart.getMonth()].slice(1)} ${monthStart.getFullYear()}`;
+
+    const segOptStyle = (active) => `background:${active ? 'var(--color-accent-300)' : 'transparent'};color:${active ? 'var(--color-accent-800)' : 'var(--color-text)'}`;
+
+    const recipeById = (id) => RECIPES.find(r => r.id === id) || null;
+
+    const mealWeekStart = startOfWeek(s.mealWeekAnchor);
+    const mealDays = Array.from({ length: 7 }, (_, i) => {
+      const d = addDays(mealWeekStart, i);
+      const iso = toISO(d);
+      const rid = s.mealPlan[iso];
+      const recipe = recipeById(rid);
+      return {
+        iso, weekdayShort: WEEKDAY_LETTERS[d.getDay()], dateNum: d.getDate(),
+        hasRecipe: !!recipe, hasNoRecipe: !recipe,
+        recipeName: recipe ? recipe.name : '', recipeTime: recipe ? recipe.time : '',
+        recipeSlotId: recipe ? recipe.slotId : '',
+        cardStyle: `display:flex;align-items:center;gap:12px;padding:12px;border-radius:var(--radius-lg);${s.dragDayIndex === iso ? 'outline:2px dashed var(--color-accent-500);outline-offset:-2px' : ''}`,
+        openRecipe: () => recipe && this.setState({ selectedRecipeId: recipe.id }),
+        clear: () => this.clearMeal(iso),
+        openPicker: () => this.setState({ pickerDayIndex: iso }),
+        suggest: () => this.setState({ aiDayIndex: iso, aiQuery: '' }),
+        draggableFlag: !!recipe,
+        onDragStart: () => this.setState({ dragDayIndex: iso }),
+        onDragOver: (e) => e.preventDefault(),
+        onDrop: (e) => { e.preventDefault(); if (s.dragDayIndex !== null) this.swapMeals(s.dragDayIndex, iso); },
+      };
+    });
+    const mealWeekLabel = `${mealWeekStart.getDate()} – ${addDays(mealWeekStart, 6).getDate()} ${MONTH_NAMES[addDays(mealWeekStart, 6).getMonth()]}`;
+    const mealsPlannedThisWeek = mealDays.filter(md => md.hasRecipe).length;
+
+    const recipesWithHandlers = RECIPES.map(r => ({
+      ...r,
+      open: () => this.setState({ selectedRecipeId: r.id }),
+      assignToPicker: () => this.assignMeal(s.pickerDayIndex, r.id),
+      assignToAi: () => this.assignMeal(s.aiDayIndex, r.id),
+    }));
+
+    let aiSuggestions = [];
+    if (s.aiDayIndex !== null) {
+      const q = s.aiQuery.trim().toLowerCase();
+      if (q) {
+        const matched = recipesWithHandlers.filter(r => (r.name + ' ' + r.tag).toLowerCase().includes(q));
+        aiSuggestions = (matched.length ? matched : recipesWithHandlers).slice(0, 3);
+      } else {
+        const seed = new Date(s.aiDayIndex).getDate() % RECIPES.length;
+        const idxs = [seed, (seed + 2) % RECIPES.length, (seed + 4) % RECIPES.length];
+        aiSuggestions = [...new Set(idxs)].map(i => recipesWithHandlers[i]);
+      }
+    }
+
+    const selectedRecipe = s.selectedRecipeId ? recipeById(s.selectedRecipeId) : null;
+    const selectedRecipeIngredients = selectedRecipe ? selectedRecipe.ingredients.map((name, i) => {
+      const added = s.groceryList.some(g => g.name.toLowerCase() === name.toLowerCase());
+      return {
+        name, key: i, added,
+        buttonLabel: added ? 'Ajouté ✓' : '+ Ajouter',
+        buttonStyle: `font-size:12px;font-weight:600;padding:6px 12px;border-radius:999px;flex-shrink:0;background:${added ? 'var(--color-accent-2-100)' : 'var(--color-accent-500)'};color:${added ? 'var(--color-accent-2-800)' : '#fff'}`,
+        add: () => this.addIngredientToGrocery(name),
+      };
+    }) : [];
+
+    const groceryWithRows = s.groceryList.map(g => ({
+      ...g,
+      checkboxStyle: checkboxStyle(g.checked),
+      textStyle: g.checked ? 'font-size:15px;color:var(--color-neutral-600);text-decoration:line-through' : 'font-size:15px;color:var(--color-text)',
+      toggle: () => this.toggleGrocery(g.id),
+      remove: () => this.removeGroceryItem(g.id),
+    }));
+
+    const chipStyle = (active) => `padding:7px 16px;border-radius:999px;font-size:13.5px;font-weight:600;background:${active ? 'var(--color-accent-300)' : 'var(--color-neutral-100)'};color:${active ? 'var(--color-accent-800)' : 'var(--color-text)'}`;
+    const tabColor = (tab) => s.activeTab === tab ? 'var(--color-accent-600)' : 'var(--color-neutral-400)';
+
+    const tonightRecipe = recipeById(s.mealPlan[toISO(CAL_BASE_DATE)]);
+
+    return {
+      isHome: s.activeTab === 'home', isCalendar: s.activeTab === 'calendar',
+      isTasks: s.activeTab === 'tasks', isMeals: s.activeTab === 'meals', isGrocery: s.activeTab === 'grocery',
+      currentUserName: currentUser.name,
+      todayDateLabel: 'Dimanche 9 août 2026',
+      chipMoiStyle: chipStyle(s.currentUser === 'moi'), chipJulieStyle: chipStyle(s.currentUser === 'julie'),
+      selectUserMoi: () => this.setState({ currentUser: 'moi' }),
+      selectUserJulie: () => this.setState({ currentUser: 'julie' }),
+      pendingTasksCount: todaysTasks.filter(t => !t.completed).length,
+      hasPendingBadge: todaysTasks.filter(t => !t.completed).length > 0,
+      mealsPlannedCount: mealsPlannedThisWeek,
+      hasTodayEvents: todayEvents.length > 0, hasTodayEventsEmpty: todayEvents.length === 0,
+      hasTodayTasks: todayTasksForCard.length > 0, todayTasksForCard,
+      todayEvents, homeDayLabel,
+      handleHomeSwipeStart: (e) => { this._homeSwipeX = e.touches[0].clientX; },
+      handleHomeSwipeEnd: (e) => {
+        if (this._homeSwipeX == null) return;
+        const dx = e.changedTouches[0].clientX - this._homeSwipeX;
+        if (Math.abs(dx) > 50) this.setState(st => ({ homeDayOffset: st.homeDayOffset + (dx < 0 ? 1 : -1) }));
+        this._homeSwipeX = null;
+      },
+      tonightSlotId: tonightRecipe ? tonightRecipe.slotId : 'tonight-empty',
+      tonightMealName: tonightRecipe ? tonightRecipe.name : 'Aucun repas planifié',
+      upcomingTasks,
+      categoriesList,
+      taskFilterOptions: [
+        { key: 'all', label: 'Tout' },
+        { key: 'pending', label: 'Non terminées' },
+        { key: 'done', label: 'Terminées' },
+      ].map(o => ({ ...o, style: chipStyle(s.taskFilter === o.key), select: () => this.setState({ taskFilter: o.key }) })),
+      isWeekView, isMonthView,
+      weekModeStyle: segOptStyle(isWeekView), monthModeStyle: segOptStyle(isMonthView),
+      selectWeekView: () => this.setState({ calendarView: 'week' }),
+      selectMonthView: () => this.setState({ calendarView: 'month' }),
+      handleCalSwipeStart: (e) => { this._calSwipeX = e.touches[0].clientX; },
+      handleCalSwipeEnd: (e) => {
+        if (this._calSwipeX == null) return;
+        const dx = e.changedTouches[0].clientX - this._calSwipeX;
+        if (Math.abs(dx) > 50) this.setState(st => ({
+          calendarAnchor: isWeekView
+            ? addDays(st.calendarAnchor, dx < 0 ? 7 : -7)
+            : addMonths(st.calendarAnchor, dx < 0 ? 1 : -1),
+        }));
+        this._calSwipeX = null;
+      },
+      periodLabel,
+      weekDaysCal,
+      monthWeeks, monthWeekdayLabels,
+      selectedDayLabel: selectedDayMeta.weekday + ' ' + selectedDayMeta.num + ' ' + selectedDayMeta.month,
+      hasSelectedDayEvents: selectedDayEvents.length > 0, hasSelectedDayEventsEmpty: selectedDayEvents.length === 0,
+      selectedDayEvents,
+      mealDays, mealWeekLabel,
+      handleMealSwipeStart: (e) => { this._swipeX = e.touches[0].clientX; },
+      handleMealSwipeEnd: (e) => {
+        if (this._swipeX == null) return;
+        const dx = e.changedTouches[0].clientX - this._swipeX;
+        if (Math.abs(dx) > 50) this.setState(st => ({ mealWeekAnchor: addDays(st.mealWeekAnchor, dx < 0 ? 7 : -7) }));
+        this._swipeX = null;
+      },
+      recipes: recipesWithHandlers,
+      groceryInputValue: s.groceryInputValue,
+      handleGroceryInputChange: (e) => this.setState({ groceryInputValue: e.target.value }),
+      handleGroceryInputKeyDown: (e) => { if (e.key === 'Enter') this.addGroceryItem(); },
+      addGroceryItem: () => this.addGroceryItem(),
+      groceryCountLabel: groceryWithRows.filter(g => !g.checked).length + ' articles restants',
+      hasGroceryItems: groceryWithRows.length > 0, hasGroceryItemsEmpty: groceryWithRows.length === 0,
+      hasCheckedGroceryItems: groceryWithRows.some(g => g.checked),
+      clearCheckedGroceryItems: () => this.clearCheckedGroceryItems(),
+      groceryList: groceryWithRows,
+      selectTabHome: () => this.setState({ activeTab: 'home' }),
+      selectTabCalendar: () => this.setState({ activeTab: 'calendar' }),
+      selectTabTasks: () => this.setState({ activeTab: 'tasks' }),
+      selectTabMeals: () => this.setState({ activeTab: 'meals' }),
+      selectTabGrocery: () => this.setState({ activeTab: 'grocery' }),
+      tabHomeColor: tabColor('home'), tabCalendarColor: tabColor('calendar'), tabTasksColor: tabColor('tasks'),
+      tabMealsColor: tabColor('meals'), tabGroceryColor: tabColor('grocery'),
+      pickerOpen: s.pickerDayIndex !== null,
+      aiOpen: s.aiDayIndex !== null,
+      aiDayLabel: s.aiDayIndex !== null ? ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'][new Date(s.aiDayIndex).getDay()] : '',
+      aiSuggestions,
+      aiQuery: s.aiQuery,
+      handleAiQueryChange: (e) => this.setState({ aiQuery: e.target.value }),
+      recipeDetailOpen: !!selectedRecipe,
+      selectedRecipe: selectedRecipe || { slotId: '', name: '', time: '', tag: '' },
+      selectedRecipeIngredients,
+      closeOverlays: () => this.setState({ selectedRecipeId: null, pickerDayIndex: null, aiDayIndex: null, addTaskOpen: false, addEventOpen: false, editingEventId: null, editingTaskId: null, settingsOpen: false, importOpen: false, notificationsOpen: false, accountOpen: false, membersOpen: false, prefsOpen: false }),
+      settingsOpen: s.settingsOpen,
+      openSettings: () => this.setState({ settingsOpen: true, icsImportMessage: '' }),
+      importOpen: s.importOpen,
+      openImport: () => this.setState({ importOpen: true, settingsOpen: false, icsImportMessage: '' }),
+      closeImport: () => this.setState({ importOpen: false }),
+      notificationsOpen: s.notificationsOpen,
+      openNotifications: () => this.setState({ notificationsOpen: true, settingsOpen: false }),
+      closeNotifications: () => this.setState({ notificationsOpen: false }),
+      accountOpen: s.accountOpen,
+      openAccount: () => this.setState({ accountOpen: true, settingsOpen: false }),
+      closeAccount: () => this.setState({ accountOpen: false }),
+      membersOpen: s.membersOpen,
+      openMembers: () => this.setState({ membersOpen: true, settingsOpen: false }),
+      closeMembers: () => this.setState({ membersOpen: false }),
+      familyMembers: [
+        { key: 'moi', name: s.accountName, roleLabel: 'Vous', avatarStyle: `width:32px;height:32px;border-radius:50%;background:${PEOPLE.moi.color};color:${PEOPLE.moi.text};display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0`, initial: (s.accountName.trim().charAt(0) || 'M').toUpperCase(),
+          handleChange: (e) => { const v = e.target.value; PEOPLE.moi.name = v.trim() || 'Moi'; this.setState({ accountName: v }); } },
+        { key: 'julie', name: s.julieName, roleLabel: 'Membre', avatarStyle: `width:32px;height:32px;border-radius:50%;background:${PEOPLE.julie.color};color:${PEOPLE.julie.text};display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0`, initial: (s.julieName.trim().charAt(0) || 'J').toUpperCase(),
+          handleChange: (e) => { const v = e.target.value; PEOPLE.julie.name = v.trim() || 'Julie'; this.setState({ julieName: v }); } },
+      ],
+      inviteEmail: s.inviteEmail,
+      handleInviteEmailChange: (e) => this.setState({ inviteEmail: e.target.value }),
+      sendInvite: () => {
+        const email = s.inviteEmail.trim();
+        if (!email) return;
+        this.setState(st => ({ pendingInvites: [...st.pendingInvites, { email, id: 'inv' + Date.now() }], inviteEmail: '' }));
+      },
+      hasPendingInvites: s.pendingInvites.length > 0,
+      pendingInvites: s.pendingInvites.map(inv => ({
+        ...inv, cancel: () => this.setState(st => ({ pendingInvites: st.pendingInvites.filter(i => i.id !== inv.id) })),
+      })),
+      prefsOpen: s.prefsOpen,
+      openPrefs: () => this.setState({ prefsOpen: true, settingsOpen: false }),
+      closePrefs: () => this.setState({ prefsOpen: false }),
+      prefLanguageOptions: [{ key: 'fr', label: 'Français' }, { key: 'en', label: 'English' }].map(o => ({
+        ...o, style: chipStyle(s.prefLanguage === o.key), select: () => this.setState({ prefLanguage: o.key }),
+      })),
+      prefTimeFormatOptions: [{ key: '24h', label: '24 h' }, { key: '12h', label: '12 h (AM/PM)' }].map(o => ({
+        ...o, style: chipStyle(s.prefTimeFormat === o.key), select: () => this.setState({ prefTimeFormat: o.key }),
+      })),
+      prefWeekStartOptions: [{ key: 'dimanche', label: 'Dimanche' }, { key: 'lundi', label: 'Lundi' }].map(o => ({
+        ...o, style: chipStyle(s.prefWeekStart === o.key), select: () => this.setState({ prefWeekStart: o.key }),
+      })),
+      togglePrefSounds: () => this.setState(st => ({ prefSounds: !st.prefSounds })),
+      prefSoundsToggleStyle: `width:44px;height:26px;border-radius:999px;padding:2px;display:flex;align-items:center;justify-content:${s.prefSounds ? 'flex-end' : 'flex-start'};background:${s.prefSounds ? 'var(--color-accent-500)' : 'var(--color-neutral-300)'};flex-shrink:0`,
+      prefSoundsKnobStyle: 'width:22px;height:22px;border-radius:50%;background:#fff;display:block',
+      colorThemeOptions: Object.keys(COLOR_PALETTES).map(key => {
+        const p = COLOR_PALETTES[key];
+        const active = s.colorTheme === key;
+        return {
+          key, label: COLOR_PALETTE_LABELS[key],
+          labelColor: active ? p['--color-accent-700'] : 'var(--color-neutral-600)',
+          swatchStyle: `width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg, ${p['--color-accent']} 50%, ${p['--color-accent-2']} 50%);border:${active ? '3px' : '1px'} solid ${active ? p['--color-accent-700'] : 'var(--color-neutral-300)'}`,
+          select: () => { applyColorPalette(key); this.setState({ colorTheme: key }); },
+        };
+      }),
+      financeProofPromptOpen: s.financeProofPromptOpen,
+      skipFinanceProof: () => this.setState({ financeProofPromptOpen: false, financeProofTaskId: null }),
+      handleFinanceProofFile: (e) => { const f = e.target.files[0]; if (f) this.attachFinanceProof(f); },
+      receiptViewerOpen: !!s.receiptViewerImage,
+      receiptViewerBgStyle: `width:100%;height:100%;border-radius:12px;background-image:url(${s.receiptViewerImage});background-size:contain;background-position:center;background-repeat:no-repeat`,
+      closeReceiptViewer: () => this.setState({ receiptViewerImage: null }),
+      accountName: s.accountName,
+      handleAccountNameChange: (e) => {
+        const val = e.target.value;
+        PEOPLE.moi.name = val.trim() || 'Moi';
+        this.setState({ accountName: val });
+      },
+      accountEmail: s.accountEmail,
+      handleAccountEmailChange: (e) => this.setState({ accountEmail: e.target.value }),
+      saveAccount: () => this.setState({ accountOpen: false }),
+      toggleNotifMaster: () => this.setState(st => ({ notifEnabled: !st.notifEnabled })),
+      notifMasterToggleStyle: `width:44px;height:26px;border-radius:999px;padding:2px;display:flex;align-items:center;justify-content:${s.notifEnabled ? 'flex-end' : 'flex-start'};background:${s.notifEnabled ? 'var(--color-accent-500)' : 'var(--color-neutral-300)'};flex-shrink:0`,
+      notifMasterKnobStyle: 'width:22px;height:22px;border-radius:50%;background:#fff;display:block',
+      notificationOptions: [
+        { key: 'rdv', label: 'Rendez-vous' },
+        { key: 'taches', label: 'Tâches' },
+        { key: 'repas', label: 'Rappels de repas' },
+      ].map(o => {
+        const active = s.notifTypes[o.key] && s.notifEnabled;
+        return {
+          ...o,
+          rowOpacity: s.notifEnabled ? 1 : 0.45,
+          toggle: () => s.notifEnabled && this.setState(st => ({ notifTypes: { ...st.notifTypes, [o.key]: !st.notifTypes[o.key] } })),
+          style: `width:44px;height:26px;border-radius:999px;padding:2px;display:flex;align-items:center;justify-content:${active ? 'flex-end' : 'flex-start'};background:${active ? 'var(--color-accent-500)' : 'var(--color-neutral-300)'};flex-shrink:0`,
+          knobStyle: 'width:22px;height:22px;border-radius:50%;background:#fff;display:block',
+        };
+      }),
+      defaultReminderOptions: Object.keys(REMINDER_META).filter(k => k !== 'none').map(key => ({
+        key, label: REMINDER_META[key],
+        style: chipStyle(s.defaultReminder === key),
+        select: () => this.setState({ defaultReminder: key }),
+      })),
+      icsImportMessage: s.icsImportMessage,
+      handleIcsImportCalendar: (e) => { const f = e.target.files[0]; if (f) this.handleIcsImport(f, 'calendar'); },
+      handleIcsImportTrash: (e) => { const f = e.target.files[0]; if (f) this.setState({ pendingTrashFile: f, trashReminderPromptOpen: true, importOpen: false }); },
+      trashReminderPromptOpen: s.trashReminderPromptOpen,
+      trashReminderTime: s.trashReminderTime,
+      trashReminderShowTime: s.trashReminderMode !== 'none',
+      handleTrashReminderTimeChange: (e) => this.setState({ trashReminderTime: e.target.value }),
+      trashReminderModeOptions: [
+        { key: 'none', label: 'Aucun' },
+        { key: 'standard', label: 'Standard' },
+        { key: 'silent', label: 'Silencieux' },
+      ].map(o => ({ ...o, style: chipStyle(s.trashReminderMode === o.key), select: () => this.setState({ trashReminderMode: o.key }) })),
+      cancelTrashImport: () => this.setState({ trashReminderPromptOpen: false, pendingTrashFile: null }),
+      confirmTrashImport: () => {
+        if (s.pendingTrashFile) this.handleIcsImport(s.pendingTrashFile, 'trash', s.trashReminderTime, s.trashReminderMode);
+        this.setState({ trashReminderPromptOpen: false, pendingTrashFile: null });
+      },
+      stopPropagation: (e) => e.stopPropagation(),
+      addTaskOpen: s.addTaskOpen,
+      openAddTask: () => this.setState({ addTaskOpen: true }),
+      newTaskTitle: s.newTaskTitle,
+      handleNewTaskTitleChange: (e) => this.setState({ newTaskTitle: e.target.value }),
+      taskCategoryOptions: ['entretien', 'renovation', 'finances'].map(key => ({
+        key, label: CATEGORY_META[key].label,
+        style: chipStyle(s.newTaskCategory === key),
+        select: () => this.setState({ newTaskCategory: key }),
+      })),
+      taskPersonOptions: ['moi', 'julie', 'both'].map(key => ({
+        key, label: PEOPLE[key].name,
+        style: chipStyle(s.newTaskPerson === key),
+        select: () => this.setState({ newTaskPerson: key }),
+      })),
+      submitAddTask: () => this.submitAddTask(),
+      addEventOpen: s.addEventOpen,
+      openAddEvent: () => this.setState({ addEventOpen: true, newEventDate: s.selectedDate }),
+      newEventTitle: s.newEventTitle,
+      handleNewEventTitleChange: (e) => this.setState({ newEventTitle: e.target.value }),
+      newEventDate: s.newEventDate,
+      handleNewEventDateChange: (e) => this.setState({ newEventDate: e.target.value }),
+      newEventEndDate: s.newEventEndDate,
+      handleNewEventEndDateChange: (e) => this.setState({ newEventEndDate: e.target.value }),
+      newEventTime: s.newEventTime,
+      handleNewEventTimeChange: (e) => this.setState({ newEventTime: e.target.value }),
+      showTimeField: !s.newEventAllDay, hideTimeField: s.newEventAllDay,
+      allDayToggleStyle: chipStyle(s.newEventAllDay),
+      toggleAllDay: () => this.setState({ newEventAllDay: !s.newEventAllDay }),
+      eventPersonOptions: ['moi', 'julie', 'both'].map(key => ({
+        key, label: PEOPLE[key].name,
+        style: chipStyle(s.newEventPerson === key),
+        select: () => this.setState({ newEventPerson: key }),
+      })),
+      reminderOptions: Object.keys(REMINDER_META).filter(k => k !== 'none').map(key => {
+        const active = s.newEventReminders.includes(key);
+        return {
+          key, label: REMINDER_META[key],
+          style: chipStyle(active),
+          select: () => this.setState(st => ({
+            newEventReminders: active ? st.newEventReminders.filter(r => r !== key) : [...st.newEventReminders, key],
+          })),
+        };
+      }),
+      submitAddEvent: () => this.submitAddEvent(),
+      eventModalTitle: s.editingEventId ? 'Modifier le rendez-vous' : 'Nouveau rendez-vous',
+      eventModalSubmitLabel: s.editingEventId ? 'Enregistrer les modifications' : 'Ajouter le rendez-vous',
+      taskModalTitle: s.editingTaskId ? 'Modifier la tâche' : 'Nouvelle tâche',
+      taskModalSubmitLabel: s.editingTaskId ? 'Enregistrer les modifications' : 'Ajouter la tâche',
+      editingEventId: s.editingEventId, editingTaskId: s.editingTaskId,
+      deleteEditingEvent: () => this.deleteEditingEvent(),
+      deleteEditingTask: () => this.deleteEditingTask(),
+      newTaskDate: s.newTaskDate,
+      handleNewTaskDateChange: (e) => this.setState({ newTaskDate: e.target.value }),
+      newTaskTime: s.newTaskTime,
+      handleNewTaskTimeChange: (e) => this.setState({ newTaskTime: e.target.value }),
+      taskReminderOptions: Object.keys(REMINDER_META).filter(k => k !== 'none').map(key => {
+        const active = s.newTaskReminders.includes(key);
+        return {
+          key, label: REMINDER_META[key],
+          style: chipStyle(active),
+          select: () => this.setState(st => ({
+            newTaskReminders: active ? st.newTaskReminders.filter(r => r !== key) : [...st.newTaskReminders, key],
+          })),
+        };
+      }),
+    };
+  }
+}
+</script>
+</body>
+</html>
