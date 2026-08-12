@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Gestion Familiale",
+    "slug": "gestion-familiale",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#f9efe9",
+    "scheme": "gestion-familiale",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.gestionfamiliale.app"
+    },
+    "android": {
+      "package": "com.gestionfamiliale.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#f9efe9",
+        "foregroundImage": "./assets/android-icon-foreground.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 220,
+          "resizeMode": "contain",
+          "backgroundColor": "#f9efe9"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/android-icon-foreground.png",
+          "color": "#cf7669"
+        }
+      ]
+    ]
+  }
+}
