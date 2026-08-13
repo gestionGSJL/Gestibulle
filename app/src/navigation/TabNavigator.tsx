@@ -1,5 +1,6 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { House, Calendar, SquareCheck, UtensilsCrossed, ShoppingBasket } from 'lucide-react-native';
 import { useTheme } from '../theme/ThemeContext';
 import { HomeScreen } from '../screens/HomeScreen';
@@ -12,6 +13,7 @@ const Tab = createBottomTabNavigator();
 
 export function TabNavigator() {
   const t = useTheme();
+  const insets = useSafeAreaInsets();
   return (
     <Tab.Navigator
       screenOptions={{
@@ -22,9 +24,11 @@ export function TabNavigator() {
           backgroundColor: t.bg,
           borderTopColor: t.accent2[100],
           borderTopWidth: 1,
-          height: 84,
+          height: 58 + insets.bottom,
           paddingTop: 8,
-          paddingBottom: 26,
+          // Reserve the device's own nav-bar/gesture-bar height (insets.bottom) below the
+          // tab bar's own padding, so labels never render underneath Android's system bar.
+          paddingBottom: Math.max(8, insets.bottom),
         },
         tabBarLabelStyle: { fontSize: 10.5, fontWeight: '600' },
       }}

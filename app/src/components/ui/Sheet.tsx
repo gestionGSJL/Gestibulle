@@ -1,5 +1,6 @@
 import React from 'react';
 import { Modal, Pressable, View, ScrollView, Text, StyleSheet } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useTheme } from '../../theme/ThemeContext';
 import { IconButton } from './IconButton';
 import { X } from 'lucide-react-native';
@@ -15,6 +16,8 @@ interface Props {
 
 export function Sheet({ visible, onClose, title, children, maxHeightPct = 80, scroll = true }: Props) {
   const t = useTheme();
+  const insets = useSafeAreaInsets();
+  const bottomPadding = 28 + insets.bottom;
   const header = title ? (
     <View style={styles.header}>
       <Text style={{ fontFamily: t.font.heading, fontSize: 19, color: t.text }}>{title}</Text>
@@ -37,12 +40,12 @@ export function Sheet({ visible, onClose, title, children, maxHeightPct = 80, sc
           }}
         >
           {scroll ? (
-            <ScrollView style={{ paddingHorizontal: 20 }} contentContainerStyle={{ paddingTop: 18, paddingBottom: 28 }}>
+            <ScrollView style={{ paddingHorizontal: 20 }} contentContainerStyle={{ paddingTop: 18, paddingBottom: bottomPadding }}>
               {header}
               {children}
             </ScrollView>
           ) : (
-            <View style={{ paddingHorizontal: 20, paddingTop: 18, paddingBottom: 28 }}>
+            <View style={{ paddingHorizontal: 20, paddingTop: 18, paddingBottom: bottomPadding }}>
               {header}
               {children}
             </View>

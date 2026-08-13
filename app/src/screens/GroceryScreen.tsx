@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { View, Text, ScrollView, Pressable } from 'react-native';
+import { View, Text, Pressable } from 'react-native';
 import { X } from 'lucide-react-native';
+import { Screen } from '../components/Screen';
 import { useTheme } from '../theme/ThemeContext';
 import { useFamilyData } from '../state/FamilyDataContext';
 import { Card, Input, Button, Checkbox, Tag } from '../components/ui';
@@ -18,7 +19,7 @@ export function GroceryScreen() {
   const hasChecked = groceryItems.some((g) => g.checked);
 
   return (
-    <ScrollView style={{ flex: 1, backgroundColor: t.bg }} contentContainerStyle={{ paddingBottom: 24 }}>
+    <Screen>
       <Text style={{ padding: 22, paddingBottom: 4, fontFamily: t.font.heading, fontSize: 28, color: t.text }}>Liste d'épicerie</Text>
 
       <View style={{ flexDirection: 'row', gap: 8, paddingHorizontal: 22, paddingVertical: 14 }}>
@@ -68,6 +69,6 @@ export function GroceryScreen() {
           </View>
         ))}
       </Card>
-    </ScrollView>
+    </Screen>
   );
 }

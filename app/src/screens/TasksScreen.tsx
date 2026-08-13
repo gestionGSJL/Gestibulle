@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react';
-import { View, Text, ScrollView, Pressable } from 'react-native';
+import { View, Text, Pressable } from 'react-native';
 import { Receipt, Plus } from 'lucide-react-native';
+import { Screen } from '../components/Screen';
 import { useTheme } from '../theme/ThemeContext';
 import { useAuth } from '../state/AuthContext';
 import { useFamilyData } from '../state/FamilyDataContext';
@@ -36,7 +37,7 @@ export function TasksScreen() {
   };
 
   return (
-    <ScrollView style={{ flex: 1, backgroundColor: t.bg }} contentContainerStyle={{ paddingBottom: 24 }}>
+    <Screen>
       <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: 22, paddingBottom: 4 }}>
         <Text style={{ fontFamily: t.font.heading, fontSize: 28, color: t.text }}>Tâches</Text>
         <Pressable
@@ -112,6 +113,6 @@ export function TasksScreen() {
       <AddEditTaskSheet visible={sheetOpen} onClose={() => { setSheetOpen(false); setEditingTask(null); }} editingTask={editingTask} />
       <FinanceProofPromptSheet visible={!!financeProofTaskId} taskId={financeProofTaskId} onClose={() => setFinanceProofTaskId(null)} />
       <ReceiptViewerSheet visible={!!receiptPath} imagePath={receiptPath} onClose={() => setReceiptPath(null)} />
-    </ScrollView>
+    </Screen>
   );
 }

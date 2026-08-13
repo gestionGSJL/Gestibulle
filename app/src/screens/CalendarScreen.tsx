@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from 'react';
-import { View, Text, ScrollView, Pressable } from 'react-native';
+import { View, Text, Pressable } from 'react-native';
+import { Screen } from '../components/Screen';
 import { useTheme } from '../theme/ThemeContext';
 import { useFamilyData } from '../state/FamilyDataContext';
 import { Card, Tag, Seg, Button } from '../components/ui';
@@ -55,7 +56,7 @@ export function CalendarScreen() {
   const selectedDayEvents = useMemo(() => eventsOnDate(events, selectedDate), [events, selectedDate]);
 
   return (
-    <ScrollView style={{ flex: 1, backgroundColor: t.bg }} contentContainerStyle={{ paddingBottom: 24 }}>
+    <Screen>
       <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: 22, paddingBottom: 4 }}>
         <Text style={{ fontFamily: t.font.heading, fontSize: 28, color: t.text }}>Calendrier</Text>
         <Seg
@@ -173,6 +174,6 @@ export function CalendarScreen() {
         editingEvent={editingEvent}
         defaultDate={selectedDate}
       />
-    </ScrollView>
+    </Screen>
   );
 }

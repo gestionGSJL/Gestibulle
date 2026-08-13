@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react';
-import { View, Text, ScrollView, Pressable } from 'react-native';
+import { View, Text, Pressable } from 'react-native';
 import { X } from 'lucide-react-native';
+import { Screen } from '../components/Screen';
 import { useTheme } from '../theme/ThemeContext';
 import { useFamilyData } from '../state/FamilyDataContext';
 import { Card, Button } from '../components/ui';
@@ -45,7 +46,7 @@ export function MealsScreen() {
   };
 
   return (
-    <ScrollView style={{ flex: 1, backgroundColor: t.bg }} contentContainerStyle={{ paddingBottom: 24 }}>
+    <Screen>
       <Text style={{ padding: 22, paddingBottom: 4, fontFamily: t.font.heading, fontSize: 28, color: t.text }}>Repas de la semaine</Text>
       <Text style={{ paddingHorizontal: 22, paddingBottom: 12, fontSize: 13, color: t.neutral[700] }}>
         Planifiez, ou laissez l'IA vous proposer des idées. Appui long sur une recette pour la déplacer.
@@ -127,6 +128,6 @@ export function MealsScreen() {
         onSelect={(r) => { if (aiDate) setMeal(aiDate, r.id); setAiDate(null); }}
       />
       <RecipeDetailSheet visible={!!detailRecipe} recipe={detailRecipe} onClose={() => setDetailRecipe(null)} />
-    </ScrollView>
+    </Screen>
   );
 }

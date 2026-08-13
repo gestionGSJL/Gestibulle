@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react';
-import { View, Text, ScrollView, Pressable } from 'react-native';
+import { View, Text, Pressable } from 'react-native';
 import { Settings } from 'lucide-react-native';
+import { Screen } from '../components/Screen';
 import { useTheme } from '../theme/ThemeContext';
 import { useAuth } from '../state/AuthContext';
 import { useFamilyData } from '../state/FamilyDataContext';
@@ -57,7 +58,7 @@ export function HomeScreen() {
   const { toggleTask, updateTask } = useFamilyData();
 
   return (
-    <ScrollView style={{ flex: 1, backgroundColor: t.bg }} contentContainerStyle={{ paddingBottom: 24 }}>
+    <Screen>
       <View style={{ flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between', padding: 22, paddingBottom: 6 }}>
         <View>
           <Text style={{ fontSize: 12.5, fontFamily: t.font.bodyBold, color: t.accent[700], letterSpacing: 0.6, textTransform: 'uppercase' }}>
@@ -165,6 +166,6 @@ export function HomeScreen() {
       </Card>
 
       <SettingsHost visible={settingsOpen} onClose={() => setSettingsOpen(false)} />
-    </ScrollView>
+    </Screen>
   );
 }
