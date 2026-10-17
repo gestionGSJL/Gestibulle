@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useEffect, useState, useCallback, useMemo, useRef } from 'react';
 import { supabase } from '../lib/supabase';
 import { useAuth } from './AuthContext';
+import { cancelReminders } from '../lib/notifications';
 import {
   FamilyMember, Invite, FamilyEvent, FamilyTask, Recipe, MealPlanEntry,
   GroceryItem, NotificationPrefs, AppPrefs,
@@ -256,6 +257,9 @@ export function FamilyDataProvider({ children }: { children: React.ReactNode }) 
         completed_at: willComplete ? new Date().toISOString().slice(0, 10) : null,
       };
       await updateTask(id, patch);
+      // Completed ahead of its due date/time — the scheduled reminder would otherwise
+      // still fire later for a task that's already done.
+      if (willComplete) await cancelReminders('task', id);
       return { openFinanceProof: willComplete && task.category === 'finances' };
     },
     [tasks, member, updateTask]

@@ -122,9 +122,14 @@ export async function scheduleTaskDueNotification(params: {
 }
 
 export async function cancelReminders(entityType: 'event' | 'task', entityId: string) {
-  await Promise.all(
-    (Object.keys(REMINDER_OFFSET_MS) as ReminderKey[]).map((key) =>
+  await Promise.all([
+    ...(Object.keys(REMINDER_OFFSET_MS) as ReminderKey[]).map((key) =>
       Notifications.cancelScheduledNotificationAsync(notificationIdFor(entityType, entityId, key)).catch(() => {})
-    )
-  );
+    ),
+    // tasks can also carry a same-day "due" notification (see scheduleTaskDueNotification) —
+    // cancel it too so completing a task early doesn't still buzz at its due time.
+    ...(entityType === 'task'
+      ? [Notifications.cancelScheduledNotificationAsync(`task-due-${entityId}`).catch(() => {})]
+      : []),
+  ]);
 }
